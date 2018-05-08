@@ -7,6 +7,28 @@ const About = () => (
       <div className="col-lg-8">
         <div className="content-column-content">
           <h1>about</h1>
+          <div className="row">
+            <div className="card">
+              <img
+                className="card-img-top"
+                src={require('../img/about.jpg')}
+                alt="about"
+              />
+              <div className="card-body">
+                <p className="card-text">me!</p>
+              </div>
+            </div>
+            <div className="card">
+              <img
+                className="card-img-top"
+                src={require('../img/jefferson.jpg')}
+                alt="jefferson"
+              />
+              <div className="card-body">
+                <p className="card-text">jefferson!</p>
+              </div>
+            </div>
+          </div>
           <p className="lead">
             I am a software engineer specializing in full-stack web development.
             In particular, I really enjoy working with various Javascript
