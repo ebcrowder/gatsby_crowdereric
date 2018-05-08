@@ -1,8 +1,8 @@
 import React from 'react'
-import Link from 'gatsby-link'
 
 const Portfolio = () => (
   <div>
+    <h1>portfolio</h1>
     <div className="card-deck">
       <div className="card">
         <img

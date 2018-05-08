@@ -1,8 +1,11 @@
 import React from 'react'
-import Link from 'gatsby-link'
 
-import Portfolio from '../components/portfolio'
+import Splash from '../components/splash'
 
-const IndexPage = () => <div>data!</div>
+const IndexPage = () => (
+  <div>
+    <Splash />
+  </div>
+)
 
 export default IndexPage

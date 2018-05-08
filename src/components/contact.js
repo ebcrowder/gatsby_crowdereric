@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'gatsby-link'
 
 const Contact = () => (
   <div className="row">
@@ -13,25 +12,25 @@ const Contact = () => (
         <p className="lead">Contact me through any of the following mediums:</p>
         <p className="social">
           <a
-            href="https://www.linkedin.com/in/ebcrowder/"
-            data-animate-hover="pulse"
-            className="external linkedin"
-          >
-            <i className="fab fa-linkedin-in" />
-          </a>
-          <a
             href="mailto:ebcrowder@gmail.com"
             data-animate-hover="pulse"
             className="email"
           >
-            <i className="fas fa-envelope" />
+            <i className="fas fa-envelope fa-2x" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/ebcrowder/"
+            data-animate-hover="pulse"
+            className="external linkedin"
+          >
+            <i className="fab fa-linkedin-in fa-2x" />
           </a>
           <a
             href="https://github.com/ebcrowder"
             data-animate-hover="pulse"
             className="external github"
           >
-            <i className="fab fa-github" />
+            <i className="fab fa-github fa-2x" />
           </a>
         </p>
       </div>

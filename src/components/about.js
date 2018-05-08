@@ -8,12 +8,13 @@ const About = () => (
         <div className="content-column-content">
           <h1>about</h1>
           <p className="lead">
-            I am a software engineer specializing in full-stack development and
-            Javascript frameworks, such as React.js and Node.js. As a former
+            I am a software engineer specializing in full-stack web development.
+            In particular, I really enjoy working with various Javascript
+            libraries and runtimes such as React.js and Node.js. As a former
             accountant of 10+ years, I thrive when working with engaged teams to
-            find solutions for clients. I believe in committing to mastery in
-            all situations and thereby fully enjoying the process, whether it be
-            work or personal endeavors.
+            find solutions for clients. I believe in immersing myself fully in
+            life and thereby fully enjoying the process, whether it be work or
+            personal endeavors.
           </p>
           <p className="lead">
             When not coding, I am an avid trail runner and spend a lot of time
@@ -29,17 +30,17 @@ const About = () => (
                 <h4 className="text-uppercase">Skills</h4>
 
                 <div className="subheading mb-3">
-                  Programming Languages & Tools
+                  Programming Languages & Tools:
                 </div>
-                <ul className="fa-ul mb-0">
+                <ul className="code-languages">
                   <li>
-                    <row className="devicons devicons-html5" />
-                    <row className="devicons devicons-css3" />
-                    <row className="devicons devicons-javascript" />
-                    <row className="devicons devicons-react" />
-                    <row className="devicons devicons-nodejs" />
-                    <row className="devicons devicons-database" />
-                    <row className="devicons devicons-aws" />
+                    <i className="fab fa-html5 fa-2x" />
+                    <i className="fab fa-css3-alt fa-2x" />
+                    <i className="fab fa-js fa-2x" />
+                    <i className="fab fa-react fa-2x" />
+                    <i className="fab fa-node fa-2x" />
+                    <i className="fas fa-database fa-2x" />
+                    <i className="fab fa-aws fa-2x" />
                   </li>
                 </ul>
 
@@ -62,8 +63,7 @@ const About = () => (
 
           <h4 className="text-uppercase">Certifications</h4>
           <ul>
-            <li>AWS Certified Developer - Associate</li>
-            <li>Certified Public Accountant - Oregon # 14740 </li>
+            <li>Amazon Web Services (AWS) Certified Developer - Associate</li>
           </ul>
         </div>
       </div>
