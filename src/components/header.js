@@ -7,27 +7,21 @@ const Header = ({ siteTitle }) => (
   <nav className="navbar navbar-expand-sm">
     <a className="navbar-brand">
       <Link to="/">
-        <Rotate>
+        <Rotate componentClass="rotate">
           <h1>🌲</h1>
         </Rotate>
       </Link>
     </a>
 
     <ul className="navbar-nav">
-      <li className="nav-item active">
-        <a className="nav-link">
-          <Link to="/page-2">portfolio</Link>
-        </a>
+      <li className="nav-item">
+        <Link to="/page-2">portfolio</Link>
       </li>
       <li className="nav-item">
-        <a className="nav-link">
-          <Link to="/page-3">about</Link>
-        </a>
+        <Link to="/page-3">about</Link>
       </li>
       <li className="nav-item">
-        <a className="nav-link">
-          <Link to="/page-4">contact</Link>
-        </a>
+        <Link to="/page-4">contact</Link>
       </li>
     </ul>
   </nav>
