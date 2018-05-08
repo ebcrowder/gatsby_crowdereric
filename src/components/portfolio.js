@@ -11,7 +11,9 @@ const Portfolio = () => (
           alt="tree"
         />
         <div className="card-body">
-          <h5 className="card-title">tree</h5>
+          <h5 className="card-title">
+            <a href="https://sheltered-brushlands-51479.herokuapp.com/">tree</a>
+          </h5>
           <p className="card-text">
             Open source management software for health & wellness businesses.
             Features authentication via OAuth 2.0, scheduling, and other
@@ -27,7 +29,11 @@ const Portfolio = () => (
           alt="Card image cap"
         />
         <div className="card-body">
-          <h5 className="card-title">serverless blog</h5>
+          <h5 className="card-title">
+            <a href="http://serverless-e-crowder.s3-website-us-east-1.amazonaws.com/">
+              serverless blog
+            </a>
+          </h5>
           <p className="card-text">
             Blog application featuring CRUD functionality. Front-end built with
             React.js and Redux. REST API built with Express and Node.js.
@@ -43,7 +49,9 @@ const Portfolio = () => (
           alt="Card image cap"
         />
         <div className="card-body">
-          <h5 className="card-title">darlingdance</h5>
+          <h5 className="card-title">
+            <a href="http://darlingdance.com/">darlingdance</a>
+          </h5>
           <p className="card-text">
             Founded in 2010, darlingdance is a feminist postmodern dance company
             based in Washington, DC.
@@ -57,7 +65,11 @@ const Portfolio = () => (
           alt="Card image cap"
         />
         <div className="card-body">
-          <h5 className="card-title">bitcoin & ethereum price chart</h5>
+          <h5 className="card-title">
+            <a href="http://cointracker.s3-website-us-east-1.amazonaws.com/">
+              bitcoin & ethereum price chart
+            </a>
+          </h5>
           <p className="card-text">
             Ethereum and Bitcoin price history graph built using React.js. It
             features API calls via axios to the Coinbase and Poloniex APIs and
