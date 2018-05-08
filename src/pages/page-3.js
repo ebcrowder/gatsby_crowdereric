@@ -1,11 +1,11 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import About from '../components/about'
+
 const ThirdPage = () => (
   <div>
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 3</p>
-    <Link to="/">Go back to the homepage</Link>
+    <About />
   </div>
 )
 
