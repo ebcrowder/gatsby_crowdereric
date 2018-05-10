@@ -40,11 +40,11 @@ const About = () => (
           </p>
           <p className="lead">
             When not coding, I am an avid trail runner and spend a lot of time
-            running in forest park or on the endless trails in Oregon and
-            Washington. I ran my first ultra-distance marathon in 2017 (Oregon
-            Coast 50k) and love being a part of the trail running community here
-            in the Pacific Northwest. When I am not running, I enjoy hiking and
-            camping with my dog, Jefferson.
+            running in gorgeous forest park or on the endless trails in Oregon
+            and Washington. I ran my first ultra-distance marathon in 2017
+            (Oregon Coast 50k) and love being a part of the trail running
+            community here in the Pacific Northwest. When I am not running, I
+            enjoy hiking and camping with my dog, Jefferson.
           </p>
           <div className="row">
             <div className="col-lg-8">
@@ -62,7 +62,6 @@ const About = () => (
                     <i className="fab fa-react fa-2x" />
                     <i className="fab fa-node fa-2x" />
                     <i className="fas fa-database fa-2x" />
-                    <i className="fab fa-aws fa-2x" />
                   </li>
                 </ul>
 

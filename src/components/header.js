@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 import { rotate360, Rotate } from '../components/brand'
 
 const Header = ({ siteTitle }) => (
-  <nav className="navbar navbar-expand-sm">
+  <nav className="navbar navbar-expand">
     <div className="navbar-brand">
       <Link to="/">
         <Rotate>
