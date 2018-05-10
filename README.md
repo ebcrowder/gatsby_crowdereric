@@ -6,7 +6,7 @@ Portfolio website built with React utilizing Gatsby.
 
 ## Deployment
 
-coming soon!
+* https://www.crowdereric.com
 
 ## Built With
 
