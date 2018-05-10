@@ -11,4 +11,4 @@ coming soon!
 ## Built With
 
 * [React](https://reactjs.org/) - Javascript library for front-end development
-* [Gatsby.js](https://www.gatsbyjs.org/) - Static site generator
+* [Gatsby](https://www.gatsbyjs.org/) - Static site generator

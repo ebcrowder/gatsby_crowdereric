@@ -5,13 +5,13 @@ import { rotate360, Rotate } from '../components/brand'
 
 const Header = ({ siteTitle }) => (
   <nav className="navbar navbar-expand-sm">
-    <a className="navbar-brand">
+    <div className="navbar-brand">
       <Link to="/">
-        <Rotate componentClass="rotate">
+        <Rotate>
           <h1>🌲</h1>
         </Rotate>
       </Link>
-    </a>
+    </div>
 
     <ul className="navbar-nav">
       <li className="nav-item">

@@ -7,24 +7,6 @@ const Portfolio = () => (
       <div className="card">
         <img
           className="card-img-top"
-          src={require('../img/portfolio/tree.jpg')}
-          alt="tree"
-        />
-        <div className="card-body">
-          <h5 className="card-title">
-            <a href="https://sheltered-brushlands-51479.herokuapp.com/">tree</a>
-          </h5>
-          <p className="card-text">
-            Open source management software for health & wellness businesses.
-            Features authentication via OAuth 2.0, scheduling, and other
-            functionality. Built using React.js, Redux, Node.js, Express and
-            MongoDB.
-          </p>
-        </div>
-      </div>
-      <div className="card">
-        <img
-          className="card-img-top"
           src={require('../img/portfolio/serverless.jpg')}
           alt="Card image cap"
         />
@@ -55,6 +37,24 @@ const Portfolio = () => (
           <p className="card-text">
             Founded in 2010, darlingdance is a feminist postmodern dance company
             based in Washington, DC.
+          </p>
+        </div>
+      </div>
+      <div className="card">
+        <img
+          className="card-img-top"
+          src={require('../img/portfolio/tree.jpg')}
+          alt="tree"
+        />
+        <div className="card-body">
+          <h5 className="card-title">
+            <a href="https://sheltered-brushlands-51479.herokuapp.com/">tree</a>
+          </h5>
+          <p className="card-text">
+            Open source management software for health & wellness businesses.
+            Features authentication via OAuth 2.0, scheduling, and other
+            functionality. Built using React.js, Redux, Node.js, Express and
+            MongoDB.
           </p>
         </div>
       </div>
