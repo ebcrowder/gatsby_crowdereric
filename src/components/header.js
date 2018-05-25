@@ -1,7 +1,7 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
 
-import { rotate360, Rotate } from '../components/brand'
+import { rotate360, Rotate } from '../components/brand';
 
 const Header = ({ siteTitle }) => (
   <nav className="navbar navbar-expand">
@@ -25,6 +25,6 @@ const Header = ({ siteTitle }) => (
       </li>
     </ul>
   </nav>
-)
+);
 
-export default Header
+export default Header;

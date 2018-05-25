@@ -1,15 +1,16 @@
-import React from 'react'
+import React from 'react';
+
+import darling from '../img/portfolio/darling.jpg';
+import serverless from '../img/portfolio/serverless.jpg';
+import tree from '../img/portfolio/tree.jpg';
+import ether from '../img/portfolio/ether.jpg';
 
 const Portfolio = () => (
   <div>
     <h1>portfolio</h1>
     <div className="card-deck">
       <div className="card">
-        <img
-          className="card-img-top"
-          src={require('../img/portfolio/serverless.jpg')}
-          alt="Card image cap"
-        />
+        <img className="card-img-top" src={serverless} alt="Card image cap" />
         <div className="card-body">
           <h5 className="card-title">
             <a href="http://serverless-e-crowder.s3-website-us-east-1.amazonaws.com/">
@@ -25,11 +26,7 @@ const Portfolio = () => (
         </div>
       </div>
       <div className="card">
-        <img
-          className="card-img-top"
-          src={require('../img/portfolio/darling.jpg')}
-          alt="Card image cap"
-        />
+        <img className="card-img-top" src={darling} alt="Card image cap" />
         <div className="card-body">
           <h5 className="card-title">
             <a href="http://darlingdance.com/">darlingdance</a>
@@ -41,11 +38,7 @@ const Portfolio = () => (
         </div>
       </div>
       <div className="card">
-        <img
-          className="card-img-top"
-          src={require('../img/portfolio/tree.jpg')}
-          alt="tree"
-        />
+        <img className="card-img-top" src={tree} alt="tree" />
         <div className="card-body">
           <h5 className="card-title">
             <a href="https://sheltered-brushlands-51479.herokuapp.com/">tree</a>
@@ -59,11 +52,7 @@ const Portfolio = () => (
         </div>
       </div>
       <div className="card">
-        <img
-          className="card-img-top"
-          src={require('../img/portfolio/ether.jpg')}
-          alt="Card image cap"
-        />
+        <img className="card-img-top" src={ether} alt="Card image cap" />
         <div className="card-body">
           <h5 className="card-title">
             <a href="http://cointracker.s3-website-us-east-1.amazonaws.com/">
@@ -79,6 +68,6 @@ const Portfolio = () => (
       </div>
     </div>
   </div>
-)
+);
 
-export default Portfolio
+export default Portfolio;

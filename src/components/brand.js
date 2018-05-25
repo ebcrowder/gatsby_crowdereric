@@ -1,5 +1,5 @@
-import React from 'react'
-import styled, { keyframes } from 'styled-components'
+import React from 'react';
+import styled, { keyframes } from 'styled-components';
 
 // keyframes returns a unique name based on a hash of the contents of the keyframes
 export const rotate360 = keyframes`
@@ -10,7 +10,7 @@ export const rotate360 = keyframes`
   to {
     transform: rotate(360deg);
   }
-`
+`;
 
 // Here we create a component that will rotate everything we pass in over two seconds
 export const Rotate = styled.div`
@@ -18,4 +18,4 @@ export const Rotate = styled.div`
   animation: ${rotate360} 2s linear infinite;
   padding: 2rem 1rem;
   font-size: 1.2rem;
-`
+`;

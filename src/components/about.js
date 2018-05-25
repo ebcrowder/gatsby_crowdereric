@@ -1,5 +1,8 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
+
+import Me from '../img/about.jpg';
+import Jefferson from '../img/jefferson.jpg';
 
 const About = () => (
   <div>
@@ -9,21 +12,13 @@ const About = () => (
           <h1>about</h1>
           <div className="row">
             <div className="card">
-              <img
-                className="card-img-top"
-                src={require('../img/about.jpg')}
-                alt="about"
-              />
+              <img className="card-img-top" src={Me} alt="about" />
               <div className="card-body">
                 <p className="card-text">me!</p>
               </div>
             </div>
             <div className="card">
-              <img
-                className="card-img-top"
-                src={require('../img/jefferson.jpg')}
-                alt="jefferson"
-              />
+              <img className="card-img-top" src={Jefferson} alt="jefferson" />
               <div className="card-body">
                 <p className="card-text">jefferson!</p>
               </div>
@@ -90,6 +85,6 @@ const About = () => (
       </div>
     </div>
   </div>
-)
+);
 
-export default About
+export default About;
