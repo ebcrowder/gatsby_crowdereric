@@ -30,24 +30,24 @@ export default class Portfolio extends Component {
         <div className="card-deck">
           <CardAnimate
             className="card"
-            pose={this.state.hovering1 ? 'hovered' : 'idle'}
-            onMouseEnter={() => this.setState({ hovering1: true })}
-            onMouseLeave={() => this.setState({ hovering1: false })}
+            pose={this.state.hovering4 ? 'hovered' : 'idle'}
+            onMouseEnter={() => this.setState({ hovering4: true })}
+            onMouseLeave={() => this.setState({ hovering4: false })}
           >
-            <img className="card-img-top" src={serverless} alt="serverless" />
+            <img className="card-img-top" src={trailer} alt="trailer" />
             <div className="card-body">
               <h5 className="card-title">
-                <a href="http://serverless-e-crowder.s3-website-us-east-1.amazonaws.com/">
-                  serverless blog
+                <a href="https://obscure-everglades-66951.herokuapp.com/">
+                  trailer mountain
                 </a>
               </h5>
               <p className="card-text">
-                Blog application featuring CRUD functionality. Front-end built
-                with React.js and Redux. REST API built with Express and
-                Node.js. Deployed on aws using Serverless framework.
+                utilizing the MovieDB (TMDb), allows users to search the TMDb
+                for movies and view related info, posters and trailers.
               </p>
             </div>
           </CardAnimate>
+
           <CardAnimate
             className="card"
             pose={this.state.hovering2 ? 'hovered' : 'idle'}
@@ -60,11 +60,12 @@ export default class Portfolio extends Component {
                 <a href="http://darlingdance.com/">darlingdance</a>
               </h5>
               <p className="card-text">
-                Founded in 2010, darlingdance is a feminist postmodern dance
+                founded in 2010, darlingdance is a feminist postmodern dance
                 company based in Washington, DC.
               </p>
             </div>
           </CardAnimate>
+
           <CardAnimate
             className="card"
             pose={this.state.hovering3 ? 'hovered' : 'idle'}
@@ -79,7 +80,7 @@ export default class Portfolio extends Component {
                 </a>
               </h5>
               <p className="card-text">
-                Single page application for searching the Discogs database for
+                single page application for searching the Discogs database for
                 albums by artist. Built with React and features CSS Grid and
                 Styled Components.
               </p>
@@ -88,20 +89,21 @@ export default class Portfolio extends Component {
 
           <CardAnimate
             className="card"
-            pose={this.state.hovering4 ? 'hovered' : 'idle'}
-            onMouseEnter={() => this.setState({ hovering4: true })}
-            onMouseLeave={() => this.setState({ hovering4: false })}
+            pose={this.state.hovering1 ? 'hovered' : 'idle'}
+            onMouseEnter={() => this.setState({ hovering1: true })}
+            onMouseLeave={() => this.setState({ hovering1: false })}
           >
-            <img className="card-img-top" src={trailer} alt="trailer" />
+            <img className="card-img-top" src={serverless} alt="serverless" />
             <div className="card-body">
               <h5 className="card-title">
-                <a href="https://obscure-everglades-66951.herokuapp.com/">
-                  trailer mountain
+                <a href="http://serverless-e-crowder.s3-website-us-east-1.amazonaws.com/">
+                  serverless blog
                 </a>
               </h5>
               <p className="card-text">
-                Utilizing the MovieDB (TMDb), allows users to search the TMDb
-                for movies and view related info, posters and trailers.
+                blog application featuring CRUD functionality. front-end built
+                with React.js and Redux. REST API built with Express and
+                Node.js. deployed on aws using Serverless framework.
               </p>
             </div>
           </CardAnimate>
@@ -120,9 +122,9 @@ export default class Portfolio extends Component {
                 </a>
               </h5>
               <p className="card-text">
-                Open source management software for health & wellness
-                businesses. Features authentication via OAuth 2.0, scheduling,
-                and other functionality. Built using React.js, Redux, Node.js,
+                open source management software for health & wellness
+                businesses. features authentication via OAuth 2.0, scheduling,
+                and other functionality. built using React.js, Redux, Node.js,
                 Express and MongoDB.
               </p>
             </div>

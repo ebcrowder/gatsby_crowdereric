@@ -57,7 +57,7 @@ export default class About extends Component {
         </p>
         <p className="lead">
           When not coding, I am an avid trail runner and spend a lot of time
-          running in gorgeous forest park or on the endless trails in Oregon and
+          running in gorgeous Forest Park or on the endless trails in Oregon and
           Washington. I ran my first ultra-distance marathon in 2017 (Oregon
           Coast 50k) and love being a part of the trail running community here
           in the Pacific Northwest. I also really enjoy hiking and camping with
