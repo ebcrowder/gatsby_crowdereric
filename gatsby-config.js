@@ -13,6 +13,8 @@ module.exports = {
       options: {
         trackingId: 'UA-115921525-1',
       },
+    },
+    {
       resolve: `gatsby-plugin-favicon`,
       options: {
         logo: './src/favicon.png',
