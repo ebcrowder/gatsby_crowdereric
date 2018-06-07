@@ -1,10 +1,9 @@
 import React from 'react';
-import Link from 'gatsby-link';
 
 const Splash = () => (
-  <div className="jumbotron">
-    <h1 className="display-4">hello!</h1>
-    <p className="lead">i am eric crowder and i am a software engineer.</p>
+  <div className="intro">
+    <h1>hello!</h1>
+    <p>i am eric crowder and i am a web developer.</p>
   </div>
 );
 

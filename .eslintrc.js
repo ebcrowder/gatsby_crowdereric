@@ -6,4 +6,4 @@ module.exports = {
     'no-use-before-define': 0,
     'arrow-body-style': 0,
   },
-}
+};

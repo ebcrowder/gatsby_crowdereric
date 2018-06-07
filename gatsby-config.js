@@ -1,10 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: 'eric crowder',
+    title: 'e. crowder | web developer',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-stylus',
     'gatsby-plugin-sass',
+    'gatsby-plugin-styled-components',
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -45,4 +47,4 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
   ],
-}
+};

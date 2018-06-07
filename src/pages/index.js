@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-import Splash from '../components/splash'
+import Splash from '../components/splash';
 
-const IndexPage = () => (
+const SplashPage = () => (
   <div>
     <Splash />
   </div>
-)
+);
 
-export default IndexPage
+export default SplashPage;

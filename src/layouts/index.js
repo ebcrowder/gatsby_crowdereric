@@ -1,20 +1,25 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
 
-import Header from '../components/header'
+import Header from '../components/header';
 
-import '../scss/index.scss'
-import '../scss/bootstrap.scss'
-import '../scss/fontawesome.scss'
+import '../scss/index.styl';
+import '../scss/fontawesome.scss';
 
 const Layout = ({ children, data }) => (
   <div>
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        {
+          name: 'description',
+          content: 'eric crowder - web developer based in portland, oregon',
+        },
+        {
+          name: 'keywords',
+          content: 'web developer, web, developer, software, portland, oregon',
+        },
       ]}
     />
     <Header siteTitle={data.site.siteMetadata.title} />
@@ -29,13 +34,13 @@ const Layout = ({ children, data }) => (
       {children()}
     </div>
   </div>
-)
+);
 
 Layout.propTypes = {
   children: PropTypes.func,
-}
+};
 
-export default Layout
+export default Layout;
 
 export const query = graphql`
   query SiteTitleQuery {
@@ -45,4 +50,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;
