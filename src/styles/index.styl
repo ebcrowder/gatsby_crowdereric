@@ -1,142 +1,139 @@
 // define colors
-:root {
-  --grey: #212121;
-  --white: #fafafa;
-  --black: #000000;
-  --green: #00bfa5;
-}
+:root 
+  --grey: #212121
+  --white: #fafafa
+  --black: #000000
+  --green: #00bfa5
+
 
 // overall effects
-body, html {
-  background-color: var(--grey);
-  color: var(--white);
-  font-family: 'Source Code Pro', monospace;
-
+body, html 
+  background-color: var(--grey)
+  color: var(--white)
+  font-family: 'Source Code Pro', monospace
   @media (max-width: 900px) {
-    font-size: 13px;
+    font-size: 13px
   }
-}
 
-a {
-  color: var(--white);
-}
 
-a:hover {
-  color: var(--green);
-}
+a 
+  color: var(--white)
+
+
+a:hover 
+  color: var(--green)
+
 
 // header nav
-.nav-logo {
-  font-size: 40px;
-
+.nav-logo 
+  font-size: 40px
   @media (max-width: 900px) {
-    font-size: 30px;
+    font-size: 30px
   }
-}
 
-.nav-item {
-  margin: 10px;
-}
+
+.nav-item 
+  margin: 10px
+
 
 // intro effects
-.intro {
-  background-color: var(--grey);
-  margin: 5rem;
-}
+.intro 
+  background-color: var(--grey)
+  margin: 5rem
 
-.intro h1 {
-  overflow: hidden;
-  border-right: 0.15em solid var(--green);
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: 0.15em;
-  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-}
 
-@keyframes typing {
+.intro h1 
+  overflow: hidden
+  border-right: 0.15em solid var(--green)
+  white-space: nowrap
+  margin: 0 auto
+  letter-spacing: 0.15em
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite
+
+
+@keyframes typing 
   from {
-    width: 0;
+    width: 0
   }
 
   to {
-    width: 100%;
+    width: 100%
   }
-}
 
-@keyframes blink-caret {
+
+@keyframes blink-caret 
   from, to {
-    border-color: transparent;
+    border-color: transparent
   }
 
   50% {
-    border-color: var(--green);
+    border-color: var(--green)
   }
-}
+
 
 // cards
-.card {
-  width: 18rem;
-  margin: 5px;
-  box-shadow: 0 4px 8px 0 var(--black);
-  transition: 0.3s;
-}
+.card 
+  width: 18rem
+  margin: 5px
+  box-shadow: 0 4px 8px 0 var(--black)
+  transition: 0.3s
 
-.card:hover {
-  box-shadow: 0 8px 16px 0 var(--green);
-}
 
-.card-deck {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-template-rows: auto;
+.card:hover 
+  box-shadow: 0 8px 16px 0 var(--green)
+
+
+.card-deck 
+  display: grid
+  grid-template-columns: repeat(3, auto)
+  grid-template-rows: auto
 
   @media (max-width: 900px) {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    justify-content: center;
-    justify-items: center;
+    display: grid
+    grid-template-columns: auto
+    grid-template-rows: auto
+    justify-content: center
+    justify-items: center
   }
-}
 
-.card-img-top {
-  object-fit: cover;
-  height: 50%;
-  width: 100%;
-}
 
-.card-text, .card-title, .card-body {
-  color: var(--white);
-  background-color: var(--grey);
-  text-align: center;
-  margin: 1rem;
-}
+.card-img-top 
+  object-fit: cover
+  height: 50%
+  width: 100%
+
+
+.card-text, .card-title, .card-body 
+  color: var(--white)
+  background-color: var(--grey)
+  text-align: center
+  margin: 1rem
+
 
 // about page cards
-.about {
-  display: flex;
-}
+.about 
+  display: flex
 
-.card-img-top-about {
-  object-fit: cover;
-  height: 80%;
-  width: 100%;
-}
+
+.card-img-top-about 
+  object-fit: cover
+  height: 80%
+  width: 100%
+
 
 // icons effects
-.fab, .fas {
-  margin: 10px;
-}
+.fab, .fas 
+  margin: 10px
 
-.fab:hover {
-  color: var(--green);
-}
 
-.fas:hover {
-  color: var(--green);
-}
+.fab:hover 
+  color: var(--green)
 
-.code-languages {
-  list-style-type: none;
-  margin-left: -50px;
-}
+
+.fas:hover 
+  color: var(--green)
+
+
+.code-languages 
+  list-style-type: none
+  margin-left: -50px
