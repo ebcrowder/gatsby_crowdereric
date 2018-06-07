@@ -77,6 +77,12 @@ a:hover {
 .card {
   width: 18rem;
   margin: 5px;
+  box-shadow: 0 4px 8px 0 var(--black);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 var(--green);
 }
 
 .card-deck {
@@ -104,15 +110,6 @@ a:hover {
   background-color: var(--grey);
   text-align: center;
   margin: 1rem;
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 var(--black);
-  transition: 0.3s;
-}
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 var(--green);
 }
 
 // about page cards

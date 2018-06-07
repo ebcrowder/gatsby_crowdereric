@@ -4,8 +4,8 @@ import Helmet from 'react-helmet';
 
 import Header from '../components/header';
 
-import '../scss/index.styl';
-import '../scss/fontawesome.scss';
+import '../styles/index.styl';
+import '../styles/fontawesome.scss';
 
 const Layout = ({ children, data }) => (
   <div>
@@ -18,7 +18,8 @@ const Layout = ({ children, data }) => (
         },
         {
           name: 'keywords',
-          content: 'web developer, web, developer, software, portland, oregon',
+          content:
+            'web developer, web, developer, eric crowder, eric, crowder, software, portland, oregon',
         },
       ]}
     />

@@ -7,6 +7,7 @@ module.exports = {
     'gatsby-plugin-stylus',
     'gatsby-plugin-sass',
     'gatsby-plugin-styled-components',
+    'gatsby-plugin-react-next',
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
