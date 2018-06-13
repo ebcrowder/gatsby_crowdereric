@@ -1,4 +1,3 @@
-import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
 // keyframes returns a unique name based on a hash of the contents of the keyframes
