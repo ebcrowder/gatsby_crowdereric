@@ -10,7 +10,7 @@ import trailer from '../img/portfolio/trailer.jpg';
 
 const CardAnimate = posed.div({
   idle: { scale: 1 },
-  hovered: { scale: 1.1 },
+  hovered: { scale: 1.01 },
 });
 
 export default class Portfolio extends Component {
