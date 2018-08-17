@@ -5,6 +5,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "cypress": "^3.0.1",
+    "dotenv": "^6.0.0",
     "eslint-plugin-prettier": "^2.6.0",
     "fontawesome-web": "^5.0.2",
     "gatsby": "^1.9.247",
