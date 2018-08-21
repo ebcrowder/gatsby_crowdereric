@@ -5,10 +5,6 @@ const Contact = () => (
     <div className="col-lg-8">
       <div className="content-column-content">
         <h1>contact</h1>
-        <p className="lead">
-          I am available to work on open-source projects, contract and freelance
-          work.
-        </p>
         <p className="lead">Contact me through any of the following mediums:</p>
         <p className="social">
           <a
