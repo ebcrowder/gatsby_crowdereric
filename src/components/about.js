@@ -1,3 +1,5 @@
+// @flow
+
 import React, { Component } from 'react';
 import posed from 'react-pose';
 
@@ -9,7 +11,17 @@ const CardAnimate = posed.div({
   hovered: { scale: 1.01 },
 });
 
-export default class About extends Component {
+type State = {
+  hovering1: boolean,
+  hovering2: boolean,
+};
+
+type Props = {
+  className: string,
+  pose: string,
+};
+
+export default class About extends Component<Props, State> {
   state = {
     hovering1: false,
     hovering2: false,
