@@ -11,6 +11,7 @@ body, html
   background-color: var(--grey)
   color: var(--white)
   font-family: 'Source Code Pro', monospace
+  text-align: center
   @media (max-width: 900px) {
     font-size: 13px
   }
@@ -23,6 +24,17 @@ a
 a:hover 
   color: var(--green)
 
+li
+  list-style-type: none;
+
+ul
+  padding: 0;
+
+  @media (max-width: 900px) {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+
 
 // header nav
 .nav-logo 
@@ -31,45 +43,13 @@ a:hover
     font-size: 30px
   }
 
-
 .nav-item 
   margin: 10px
 
+// splash styles
 
-// intro effects
-.intro 
-  background-color: var(--grey)
-  margin: 5rem
-
-
-.intro h1 
-  overflow: hidden
-  border-right: 0.15em solid var(--green)
-  white-space: nowrap
-  margin: 0 auto
-  letter-spacing: 0.15em
-  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite
-
-
-@keyframes typing 
-  from {
-    width: 0
-  }
-
-  to {
-    width: 100%
-  }
-
-
-@keyframes blink-caret 
-  from, to {
-    border-color: transparent
-  }
-
-  50% {
-    border-color: var(--green)
-  }
-
+.intro
+  margin: 5rem;
 
 // cards
 .card 
@@ -87,6 +67,7 @@ a:hover
   display: grid
   grid-template-columns: repeat(3, auto)
   grid-template-rows: auto
+  justify-content: center;
 
   @media (max-width: 700px) {
     display: grid
@@ -113,12 +94,25 @@ a:hover
 // about page cards
 .about 
   display: flex
+  justify-content: center;
 
 
 .card-img-top-about 
   object-fit: cover
   height: 80%
   width: 100%
+
+// about page bio
+.bio
+  display: flex;
+  flex-direction: column;
+  margin-left: 20vw;
+  margin-right: 20vw;
+
+  @media (max-width: 900px) {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
 
 
 // icons effects
@@ -136,4 +130,3 @@ a:hover
 
 .code-languages 
   list-style-type: none
-  margin-left: -50px
