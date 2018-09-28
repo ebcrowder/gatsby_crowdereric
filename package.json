@@ -7,10 +7,10 @@
     "babel-plugin-styled-components": "^1.7.1",
     "cypress": "^3.1.0",
     "dotenv": "^6.0.0",
-    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-prettier": "^2.7.0",
     "fontawesome-web": "^5.0.2",
-    "gatsby": "^2.0.6",
-    "gatsby-link": "^2.0.1",
+    "gatsby": "^2.0.11",
+    "gatsby-link": "^2.0.2",
     "gatsby-plugin-favicon": "^3.1.4",
     "gatsby-plugin-google-analytics": "^2.0.6",
     "gatsby-plugin-react-helmet": "^3.0.0",
@@ -19,15 +19,15 @@
     "gatsby-plugin-styled-components": "^3.0.0",
     "gatsby-plugin-stylus": "^2.0.1",
     "gatsby-source-filesystem": "^2.0.1",
-    "gatsby-transformer-sharp": "^2.1.1",
+    "gatsby-transformer-sharp": "^2.1.2",
     "node-sass": "^4.9.3",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-helmet": "^5.2.0",
-    "react-pose": "^3.3.3",
+    "react-pose": "^3.3.4",
     "styled-components": "^3.4.9",
     "stylus": "^0.54.5",
-    "webpack": "^4.19.1"
+    "webpack": "^4.20.2"
   },
   "keywords": [
     "gatsby"
@@ -41,11 +41,10 @@
   },
   "devDependencies": {
     "eslint-config-airbnb": "^17.1.0",
-    "eslint-config-prettier": "^3.0.1",
+    "eslint-config-prettier": "^3.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.11.1",
-    "flow-bin": "^0.80.0",
     "prettier": "^1.14.3"
   }
 }
