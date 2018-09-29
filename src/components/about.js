@@ -11,12 +11,17 @@ const CardAnimate = posed.div({
 });
 
 export default class About extends Component {
-  state = {
-    hovering1: false,
-    hovering2: false,
-  };
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      hovering1: false,
+      hovering2: false,
+    };
+  }
 
   render() {
+    const { hovering1, hovering2 } = this.state;
     return (
       <Layout>
         <div>
@@ -24,7 +29,7 @@ export default class About extends Component {
           <div className="about">
             <CardAnimate
               className="card"
-              pose={this.state.hovering1 ? 'hovered' : 'idle'}
+              pose={hovering1 ? 'hovered' : 'idle'}
               onMouseEnter={() => this.setState({ hovering1: true })}
               onMouseLeave={() => this.setState({ hovering1: false })}
             >
@@ -35,15 +40,11 @@ export default class About extends Component {
             </CardAnimate>
             <CardAnimate
               className="card"
-              pose={this.state.hovering2 ? 'hovered' : 'idle'}
+              pose={hovering2 ? 'hovered' : 'idle'}
               onMouseEnter={() => this.setState({ hovering2: true })}
               onMouseLeave={() => this.setState({ hovering2: false })}
             >
-              <img
-                className="card-img-top-about"
-                src={Jefferson}
-                alt="jefferson"
-              />
+              <img className="card-img-top-about" src={Jefferson} alt="jefferson" />
               <div className="card-body">
                 <p className="card-text">jefferson!</p>
               </div>
@@ -51,30 +52,25 @@ export default class About extends Component {
           </div>
           <div className="bio">
             <p className="lead">
-              I am a full-stack web developer based in sunny Portland, Oregon.
-              In particular, I really enjoy working with various JavaScript
-              libraries and runtimes such as React.js and Node.js. As a former
-              accountant of 10+ years, I thrive when working with engaged teams
-              to find solutions for clients. I believe in immersing myself fully
-              in life and thereby fully enjoying the process, whether it be work
-              or personal endeavors.
+              I am a full-stack web developer based in sunny Portland, Oregon. In particular, I
+              really enjoy working with various JavaScript libraries and runtimes such as React.js
+              and Node.js. As a former accountant of 10+ years, I thrive when working with engaged
+              teams to find solutions for clients. I believe in immersing myself fully in life and
+              thereby fully enjoying the process, whether it be work or personal endeavors.
             </p>
             <p className="lead">
-              When not coding, I am an avid trail runner and spend a lot of time
-              running in gorgeous Forest Park or on the endless trails in Oregon
-              and Washington. I ran my first ultra-distance marathon in 2017
-              (Oregon Coast 50k) and love being a part of the trail running
-              community here in the Pacific Northwest. I also really enjoy
-              hiking and camping with my dog, Jefferson.
+              When not coding, I am an avid trail runner and spend a lot of time running in gorgeous
+              Forest Park or on the endless trails in Oregon and Washington. I ran my first
+              ultra-distance marathon in 2017 (Oregon Coast 50k) and love being a part of the trail
+              running community here in the Pacific Northwest. I also really enjoy hiking and
+              camping with my dog, Jefferson.
             </p>
           </div>
 
           <div className="my-auto">
             <h4 className="text-uppercase">Skills</h4>
 
-            <div className="subheading mb-3">
-              Programming Languages & Tools:
-            </div>
+            <div className="subheading mb-3">Programming Languages & Tools:</div>
             <ul className="code-languages">
               <li>
                 <i className="fab fa-html5 fa-2x" />
@@ -89,9 +85,7 @@ export default class About extends Component {
 
           <h4 className="text-uppercase">Education</h4>
           <ul>
-            <li>
-              The Tech Academy - Software Developer Certificate - December 2017
-            </li>
+            <li>The Tech Academy - Software Developer Certificate - December 2017</li>
             <li>Longwood University - BSBA - Accounting - May 2007 </li>
           </ul>
 

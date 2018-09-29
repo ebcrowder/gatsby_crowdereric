@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Helmet from 'react-helmet';
-import Header from './header';
 import { StaticQuery, graphql } from 'gatsby';
+import Header from './header';
 
 import '../styles/index.styl';
 import '../styles/fontawesome.scss';
@@ -18,7 +18,7 @@ export default ({ children }) => (
       }
     `}
     render={data => (
-      <>
+      <Fragment>
         <Helmet
           titleTemplate={`%s | ${data.site.siteMetadata.title}`}
           defaultTitle={data.site.siteMetadata.title}
@@ -36,7 +36,7 @@ export default ({ children }) => (
         />
         <Header />
         <div>{children}</div>
-      </>
+      </Fragment>
     )}
   />
 );

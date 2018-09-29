@@ -15,16 +15,23 @@ const CardAnimate = posed.div({
 });
 
 export default class Portfolio extends Component {
-  state = {
-    hovering1: false,
-    hovering2: false,
-    hovering3: false,
-    hovering4: false,
-    hovering5: false,
-    hovering6: false,
-  };
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      hovering1: false,
+      hovering2: false,
+      hovering3: false,
+      hovering4: false,
+      hovering5: false,
+      hovering6: false,
+    };
+  }
 
   render() {
+    const {
+      hovering1, hovering2, hovering3, hovering4, hovering5, hovering6,
+    } = this.state;
     return (
       <Layout>
         <div>
@@ -32,27 +39,25 @@ export default class Portfolio extends Component {
           <div className="card-deck">
             <CardAnimate
               className="card"
-              pose={this.state.hovering4 ? 'hovered' : 'idle'}
+              pose={hovering4 ? 'hovered' : 'idle'}
               onMouseEnter={() => this.setState({ hovering4: true })}
               onMouseLeave={() => this.setState({ hovering4: false })}
             >
               <img className="card-img-top" src={trailer} alt="trailer" />
               <div className="card-body">
                 <h5 className="card-title">
-                  <a href="https://obscure-everglades-66951.herokuapp.com/">
-                    trailer mountain
-                  </a>
+                  <a href="https://obscure-everglades-66951.herokuapp.com/">trailer mountain</a>
                 </h5>
                 <p className="card-text">
-                  utilizing the MovieDB (TMDb), allows users to search the TMDb
-                  for movies and view related info, posters and trailers.
+                  utilizing the MovieDB (TMDb), allows users to search the TMDb for movies and view
+                  related info, posters and trailers.
                 </p>
               </div>
             </CardAnimate>
 
             <CardAnimate
               className="card"
-              pose={this.state.hovering2 ? 'hovered' : 'idle'}
+              pose={hovering2 ? 'hovered' : 'idle'}
               onMouseEnter={() => this.setState({ hovering2: true })}
               onMouseLeave={() => this.setState({ hovering2: false })}
             >
@@ -62,36 +67,33 @@ export default class Portfolio extends Component {
                   <a href="http://darlingdance.com/">darlingdance</a>
                 </h5>
                 <p className="card-text">
-                  founded in 2010, darlingdance is a feminist postmodern dance
-                  company based in Washington, DC.
+                  founded in 2010, darlingdance is a feminist postmodern dance company based in
+                  Washington, DC.
                 </p>
               </div>
             </CardAnimate>
 
             <CardAnimate
               className="card"
-              pose={this.state.hovering3 ? 'hovered' : 'idle'}
+              pose={hovering3 ? 'hovered' : 'idle'}
               onMouseEnter={() => this.setState({ hovering3: true })}
               onMouseLeave={() => this.setState({ hovering3: false })}
             >
               <img className="card-img-top" src={reverb} alt="reverb" />
               <div className="card-body">
                 <h5 className="card-title">
-                  <a href="https://sheltered-beyond-71050.herokuapp.com/">
-                    reverb
-                  </a>
+                  <a href="https://sheltered-beyond-71050.herokuapp.com/">reverb</a>
                 </h5>
                 <p className="card-text">
-                  single page application for searching the Discogs database for
-                  albums by artist. Built with React and features CSS Grid and
-                  Styled Components.
+                  single page application for searching the Discogs database for albums by artist.
+                  Built with React and features CSS Grid and Styled Components.
                 </p>
               </div>
             </CardAnimate>
 
             <CardAnimate
               className="card"
-              pose={this.state.hovering1 ? 'hovered' : 'idle'}
+              pose={hovering1 ? 'hovered' : 'idle'}
               onMouseEnter={() => this.setState({ hovering1: true })}
               onMouseLeave={() => this.setState({ hovering1: false })}
             >
@@ -103,38 +105,35 @@ export default class Portfolio extends Component {
                   </a>
                 </h5>
                 <p className="card-text">
-                  blog application featuring CRUD functionality. front-end built
-                  with React.js and Redux. REST API built with Express and
-                  Node.js. deployed on aws using Serverless framework.
+                  blog application featuring CRUD functionality. front-end built with React.js and
+                  Redux. REST API built with Express and Node.js. deployed on aws using Serverless
+                  framework.
                 </p>
               </div>
             </CardAnimate>
 
             <CardAnimate
               className="card"
-              pose={this.state.hovering5 ? 'hovered' : 'idle'}
+              pose={hovering5 ? 'hovered' : 'idle'}
               onMouseEnter={() => this.setState({ hovering5: true })}
               onMouseLeave={() => this.setState({ hovering5: false })}
             >
               <img className="card-img-top" src={tree} alt="tree" />
               <div className="card-body">
                 <h5 className="card-title">
-                  <a href="https://sheltered-brushlands-51479.herokuapp.com/">
-                    tree
-                  </a>
+                  <a href="https://sheltered-brushlands-51479.herokuapp.com/">tree</a>
                 </h5>
                 <p className="card-text">
-                  open source management software for health & wellness
-                  businesses. features authentication via OAuth 2.0, scheduling,
-                  and other functionality. built using React.js, Redux, Node.js,
-                  Express and MongoDB.
+                  open source management software for health & wellness businesses. features
+                  authentication via OAuth 2.0, scheduling, and other functionality. built using
+                  React.js, Redux, Node.js, Express and MongoDB.
                 </p>
               </div>
             </CardAnimate>
 
             <CardAnimate
               className="card"
-              pose={this.state.hovering6 ? 'hovered' : 'idle'}
+              pose={hovering6 ? 'hovered' : 'idle'}
               onMouseEnter={() => this.setState({ hovering6: true })}
               onMouseLeave={() => this.setState({ hovering6: false })}
             >
@@ -146,9 +145,9 @@ export default class Portfolio extends Component {
                   </a>
                 </h5>
                 <p className="card-text">
-                  Ethereum and Bitcoin price history graph built using React.js.
-                  It features API calls via axios to the Coinbase and Poloniex
-                  APIs and graphs rendered via Recharts.
+                  Ethereum and Bitcoin price history graph built using React.js. It features API
+                  calls via axios to the Coinbase and Poloniex APIs and graphs rendered via
+                  Recharts.
                 </p>
               </div>
             </CardAnimate>
