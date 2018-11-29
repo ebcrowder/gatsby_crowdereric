@@ -1,29 +1,12 @@
 import React from 'react';
 import Layout from './layout';
 
-import Me from '../img/about.jpg';
-import Jefferson from '../img/jefferson.jpg';
-
 const About = () => {
   return (
     <Layout>
       <div>
         <h1>about</h1>
-        <div className="about">
-          <div className="card">
-            <img className="card-img-top-about" src={Me} alt="about" />
-            <div className="card-body">
-              <p className="card-text">me!</p>
-            </div>
-          </div>
-
-          <div className="card">
-            <img className="card-img-top-about" src={Jefferson} alt="jefferson" />
-            <div className="card-body">
-              <p className="card-text">jefferson!</p>
-            </div>
-          </div>
-        </div>
+        
         <div className="bio">
           <p className="lead">
             I am a full-stack web developer based in sunny Portland, Oregon. In particular, I really
