@@ -6,21 +6,19 @@ const About = () => {
     <Layout>
       <div>
         <h1>about</h1>
-        
+
         <div className="bio">
           <p className="lead">
             I am a full-stack web developer based in sunny Portland, Oregon. In particular, I really
             enjoy working with various JavaScript libraries and runtimes such as React.js and
-            Node.js. As a former accountant of 10+ years, I thrive when working with engaged teams
-            to find solutions for clients. I believe in immersing myself fully in life and thereby
-            fully enjoying the process, whether it be work or personal endeavors.
+            Node.js. I believe in immersing myself fully in life and thereby fully enjoying the
+            process, whether it be work or personal endeavors.
           </p>
           <p className="lead">
             When not coding, I am an avid trail runner and spend a lot of time running in gorgeous
-            Forest Park or on the endless trails in Oregon and Washington. I ran my first
-            ultra-distance marathon in 2017 (Oregon Coast 50k) and love being a part of the trail
-            running community here in the Pacific Northwest. I also really enjoy hiking and camping
-            with my dog, Jefferson.
+            Forest Park. I love being a part of the trail running community here in the Pacific
+            Northwest and enjoy exploring the many trails located in Oregon and Washington. I also
+            really enjoy hiking and camping.
           </p>
         </div>
 
