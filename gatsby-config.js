@@ -11,14 +11,15 @@ module.exports = {
     'gatsby-plugin-stylus',
     'gatsby-plugin-sass',
     'gatsby-plugin-styled-components',
+    'gatsby-plugin-typescript',
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
         trackingId: process.env.GATSBY_TRACKING_ID,
       },
     },
     {
-      resolve: `gatsby-plugin-favicon`,
+      resolve: 'gatsby-plugin-favicon',
       options: {
         logo: './src/favicon.png',
         injectHTML: true,

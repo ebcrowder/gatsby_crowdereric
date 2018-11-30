@@ -6,7 +6,7 @@ import Header from './header';
 import '../styles/index.styl';
 import '../styles/fontawesome.scss';
 
-export default ({ children }) => (
+export default ({ children }: any) => (
   <StaticQuery
     query={graphql`
       query LayoutQuery {
