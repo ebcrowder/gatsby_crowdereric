@@ -1,28 +1,40 @@
-import React from 'react';
+import * as React from 'react';
 import { graphql } from 'gatsby';
+import PostLink from '../components/post-link';
 
-export default function Template({ data }: any) {
-  const { markdownRemark: post } = data;
-  console.log(data);
-  return (
-    <div className="blog-post-container">
-      <div className={`Your Blog Name - ${post.frontmatter.title}`} />
-      <div className="blog-post">
-        <h1>{post.frontmatter.title}</h1>
-        <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: post.html }} />
-      </div>
-    </div>
-  );
+interface BlogProps {
+  data: any;
+  edges: any;
+  edge: any;
 }
 
+const Blog: React.StatelessComponent<BlogProps> = ({
+  data: {
+    allMarkdownRemark: { edges },
+  },
+}) => {
+  const Posts = edges
+    .filter((edge: any) => !!edge.node.frontmatter.date)
+    .map((edge: any) => <PostLink key={edge.node.id} post={edge.node} />);
+
+  return <div>{Posts}</div>;
+};
+
+export default Blog;
+
 export const pageQuery = graphql`
-  query BlogPostByPath($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
-      html
-      frontmatter {
-        date
-        path
-        title
+  query {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      edges {
+        node {
+          id
+          excerpt(pruneLength: 250)
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            path
+            title
+          }
+        }
       }
     }
   }
