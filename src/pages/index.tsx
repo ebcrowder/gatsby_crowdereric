@@ -1,11 +1,12 @@
-import React from 'react';
+import * as React from 'react';
 
 import Splash from '../components/Splash';
+import Layout from '../components/Layout';
 
 const SplashPage = () => (
-  <div>
+  <Layout>
     <Splash />
-  </div>
+  </Layout>
 );
 
 export default SplashPage;

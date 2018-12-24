@@ -1,13 +1,10 @@
-import React from 'react';
-import Layout from './Layout';
+import * as React from 'react';
 
 const Splash = () => (
-  <Layout>
-    <div className="intro">
-      <h1>hello!</h1>
-      <p>I am Eric Crowder and I am a web developer.</p>
-    </div>
-  </Layout>
+  <div className="intro">
+    <h1>hello! ✌️</h1>
+    <p>I am Eric Crowder and I am a software engineer.</p>
+  </div>
 );
 
 export default Splash;

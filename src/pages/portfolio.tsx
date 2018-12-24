@@ -1,10 +1,13 @@
-import React from 'react';
+import * as React from 'react';
 
+import Layout from '../components/Layout';
 import Portfolio from '../components/Portfolio';
 
 const SecondPage = () => (
   <div>
-    <Portfolio />
+    <Layout>
+      <Portfolio />
+    </Layout>
   </div>
 );
 
