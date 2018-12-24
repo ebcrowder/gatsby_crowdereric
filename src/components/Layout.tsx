@@ -24,13 +24,13 @@ export default ({ children }: any) => (
           defaultTitle={data.site.siteMetadata.title}
           meta={[
             {
-              name: 'description',
               content: 'eric crowder - web developer based in portland, oregon',
+              name: 'description',
             },
             {
-              name: 'keywords',
               content:
                 'web developer, web, developer, eric crowder, eric, crowder, software, portland, oregon',
+              name: 'keywords',
             },
           ]}
         />
