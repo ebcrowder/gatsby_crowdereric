@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/ebcrowder/gatsby_crowdereric.svg?branch=master)](https://travis-ci.org/ebcrowder/gatsby_crowdereric)
+
 # portfolio
 
 Portfolio website built with React utilizing Gatsby.
@@ -6,9 +8,9 @@ Portfolio website built with React utilizing Gatsby.
 
 ## Deployment
 
-* https://www.crowdereric.com
+- https://www.crowdereric.com
 
 ## Built With
 
-* [React](https://reactjs.org/) - Javascript library for front-end development
-* [Gatsby](https://www.gatsbyjs.org/) - Static site generator
+- [React](https://reactjs.org/) - Javascript library for front-end development
+- [Gatsby](https://www.gatsbyjs.org/) - Static site generator
