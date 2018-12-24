@@ -4,11 +4,12 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@types/jest": "^23.3.10",
+    "@types/react": "^16.7.18",
     "@types/react-helmet": "^5.0.7",
-    "@types/styled-components": "^4.1.2",
+    "@types/styled-components": "^4.1.4",
     "babel-plugin-styled-components": "^1.9.1",
     "dotenv": "^6.1.0",
-    "eslint-plugin-prettier": "^3.0.0",
     "fontawesome-web": "^5.0.2",
     "gatsby": "^2.0.57",
     "gatsby-cli": "^2.4.6",
@@ -41,14 +42,25 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --verbose"
   },
   "devDependencies": {
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-config-prettier": "^3.3.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jsx-a11y": "^6.1.2",
-    "eslint-plugin-react": "^7.11.1",
-    "prettier": "^1.15.2"
+    "@babel/core": "^7.2.2",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.1.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "babel-preset-gatsby": "^0.1.6",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^23.6.0",
+    "jest-dom": "^3.0.0",
+    "jest-styled-components": "^6.3.1",
+    "prettier": "^1.15.2",
+    "react-testing-library": "^5.4.2",
+    "ts-jest": "^23.10.5",
+    "tslint": "^5.12.0",
+    "tslint-config-prettier": "^1.17.0",
+    "tslint-react": "^3.6.0",
+    "typescript": "^3.2.2"
   }
 }

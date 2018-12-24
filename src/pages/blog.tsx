@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
-import PostLink from '../components/post-link';
+import PostLink from '../components/Post-link';
 
 interface BlogProps {
   data: any;
