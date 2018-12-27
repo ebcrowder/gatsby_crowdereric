@@ -4,11 +4,9 @@ import Layout from '../components/Layout';
 import Portfolio from '../components/Portfolio';
 
 const SecondPage = () => (
-  <div>
-    <Layout>
-      <Portfolio />
-    </Layout>
-  </div>
+  <Layout>
+    <Portfolio />
+  </Layout>
 );
 
 export default SecondPage;
