@@ -3,12 +3,26 @@ import { graphql } from 'gatsby';
 import PostLink from '../components/PostLink';
 
 interface BlogProps {
-  data: any;
-  edges: any;
-  edge: any;
+  data: {
+    allMarkdownRemark: {
+      edges: [
+        {
+          node: {
+            id: string;
+            excerpt: string;
+            frontmatter: {
+              date: string;
+              path: string;
+              title: string;
+            };
+          };
+        }
+      ];
+    };
+  };
 }
 
-const Blog: React.StatelessComponent<BlogProps> = ({
+const Blog: React.FunctionComponent<BlogProps> = ({
   data: {
     allMarkdownRemark: { edges },
   },
