@@ -1,9 +1,23 @@
-import React from 'react';
+import * as React from 'react';
 import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
+import { string } from 'prop-types';
 
-export default function Template({ data }: any) {
+interface PageQueryProps {
+  data: {
+    markdownRemark: {
+      html: string;
+      frontmatter: {
+        date: string;
+        path: string;
+        title: string;
+      };
+    };
+  };
+}
+
+const Template: React.FunctionComponent<PageQueryProps> = ({ data }) => {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
   return (
@@ -12,12 +26,17 @@ export default function Template({ data }: any) {
         <div className="blog-post">
           <h1>{frontmatter.title}</h1>
           <h2>{frontmatter.date}</h2>
-          <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }} />
+          <div
+            className="blog-post-content"
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
         </div>
       </div>
     </Layout>
   );
-}
+};
+
+export default Template;
 
 export const pageQuery = graphql`
   query($path: String!) {

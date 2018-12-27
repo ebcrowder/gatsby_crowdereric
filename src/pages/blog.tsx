@@ -28,8 +28,8 @@ const Blog: React.FunctionComponent<BlogProps> = ({
   },
 }) => {
   const Posts = edges
-    .filter((edge: any) => !!edge.node.frontmatter.date)
-    .map((edge: any) => <PostLink key={edge.node.id} post={edge.node} />);
+    .filter(edge => !!edge.node.frontmatter.date)
+    .map(edge => <PostLink key={edge.node.id} post={edge.node} />);
 
   return <div>{Posts}</div>;
 };
