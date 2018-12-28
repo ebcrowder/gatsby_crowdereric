@@ -3,7 +3,19 @@ import { Link } from 'gatsby';
 
 import Layout from './Layout';
 
-const PostLink = ({ post }: any) => (
+interface PostLinkProps {
+  post: {
+    id: string;
+    excerpt: string;
+    frontmatter: {
+      date: string;
+      path: string;
+      title: string;
+    };
+  };
+}
+
+const PostLink: React.FunctionComponent<PostLinkProps> = ({ post }) => (
   <Layout>
     <h1>blog</h1>
     <div className="post-link">
