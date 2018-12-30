@@ -1,7 +1,10 @@
 import * as React from 'react';
-import Link from 'gatsby-link';
+import { Link } from 'gatsby';
 import styled from 'styled-components';
 
+const ListItem = styled.li`
+  align-self: end;
+`;
 const HeaderWrapper = styled.nav`
   display: grid;
   grid-template-columns: 6rem 6rem 6rem 6rem 6rem;
@@ -17,26 +20,48 @@ const HeaderWrapper = styled.nav`
   }
 `;
 
-const ListItem = styled.li`
-  align-self: end;
+const NavLink = styled.a`
+  &.active,
+  &[partially-active] {
+    color: #00bfa5;
+    fill: #00bfa5;
+  }
 `;
 
+const isPartiallyActive = ({ isPartiallyCurrent }: any) => {
+  return isPartiallyCurrent ? { 'partially-active': 'true' } : null;
+};
+
+const isActive = ({ isCurrent }) => {
+  return isCurrent ? { 'partially-active': 'true' } : null;
+};
+
 const Header = () => (
-  <HeaderWrapper>
+  <HeaderWrapper role="navigation" aria-label="navigation">
     <ListItem className="nav-item">
-      <Link to="/">home</Link>
+      <NavLink as={Link} to="/" getProps={isActive}>
+        home
+      </NavLink>
     </ListItem>
     <ListItem className="nav-item">
-      <Link to="/blog">blog</Link>
+      <NavLink as={Link} to="/blog" getProps={isPartiallyActive}>
+        blog
+      </NavLink>
     </ListItem>
     <ListItem className="nav-item">
-      <Link to="/portfolio">portfolio</Link>
+      <NavLink as={Link} to="/portfolio" getProps={isPartiallyActive}>
+        portfolio
+      </NavLink>
     </ListItem>
     <ListItem className="nav-item">
-      <Link to="/about">about</Link>
+      <NavLink as={Link} to="/about" getProps={isPartiallyActive}>
+        about
+      </NavLink>
     </ListItem>
     <ListItem className="nav-item">
-      <Link to="/contact">contact</Link>
+      <NavLink as={Link} to="/contact" getProps={isPartiallyActive}>
+        contact
+      </NavLink>
     </ListItem>
   </HeaderWrapper>
 );
