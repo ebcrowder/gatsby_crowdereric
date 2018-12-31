@@ -1,12 +1,7 @@
 import * as React from 'react';
 
-import Layout from '../components/Layout';
 import Portfolio from '../components/Portfolio';
 
-const SecondPage = () => (
-  <Layout>
-    <Portfolio />
-  </Layout>
-);
+const PortfolioPage = () => <Portfolio />;
 
-export default SecondPage;
+export default PortfolioPage;

@@ -35,7 +35,7 @@ export default ({ children }: any) => (
           ]}
         />
         <Header />
-        <div>{children}</div>
+        <>{children}</>
       </>
     )}
   />

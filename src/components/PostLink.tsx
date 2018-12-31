@@ -1,8 +1,6 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 
-import Layout from './Layout';
-
 interface PostLinkProps {
   post: {
     id: string;
@@ -16,7 +14,7 @@ interface PostLinkProps {
 }
 
 const PostLink: React.FunctionComponent<PostLinkProps> = ({ post }) => (
-  <Layout>
+  <>
     <h1>blog</h1>
     <div className="post-link">
       <Link to={post.frontmatter.path}>
@@ -26,7 +24,7 @@ const PostLink: React.FunctionComponent<PostLinkProps> = ({ post }) => (
         </p>
       </Link>
     </div>
-  </Layout>
+  </>
 );
 
 export default PostLink;

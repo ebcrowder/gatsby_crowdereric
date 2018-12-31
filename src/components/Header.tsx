@@ -7,7 +7,7 @@ const ListItem = styled.li`
 `;
 const HeaderWrapper = styled.nav`
   display: grid;
-  grid-template-columns: 6rem 6rem 6rem 6rem 6rem;
+  grid-template-columns: 5rem 5rem 5rem 5rem 5rem;
   grid-template-rows: 5rem;
   align-items: center;
   justify-items: center;
@@ -20,7 +20,7 @@ const HeaderWrapper = styled.nav`
   }
 `;
 
-const NavLink = styled.a`
+const NavLink: any = styled.a`
   &.active,
   &[partially-active] {
     color: #00bfa5;
@@ -32,7 +32,7 @@ const isPartiallyActive = ({ isPartiallyCurrent }: any) => {
   return isPartiallyCurrent ? { 'partially-active': 'true' } : null;
 };
 
-const isActive = ({ isCurrent }) => {
+const isActive = ({ isCurrent }: any) => {
   return isCurrent ? { 'partially-active': 'true' } : null;
 };
 
@@ -50,7 +50,7 @@ const Header = () => (
     </ListItem>
     <ListItem className="nav-item">
       <NavLink as={Link} to="/portfolio" getProps={isPartiallyActive}>
-        portfolio
+        work
       </NavLink>
     </ListItem>
     <ListItem className="nav-item">
