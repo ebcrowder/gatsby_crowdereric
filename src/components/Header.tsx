@@ -1,10 +1,12 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
+import logo from '../img/logo.svg';
 
 const ListItem = styled.li`
   align-self: end;
 `;
+
 const HeaderWrapper = styled.nav`
   display: grid;
   grid-template-columns: 5rem 5rem 5rem 5rem 5rem;
@@ -28,6 +30,11 @@ const NavLink: any = styled.a`
   }
 `;
 
+const Logo = styled.img`
+  width: 90px;
+  height: 90px;
+`;
+
 const isPartiallyActive = ({ isPartiallyCurrent }: any) => {
   return isPartiallyCurrent ? { 'partially-active': 'true' } : null;
 };
@@ -38,19 +45,13 @@ const isActive = ({ isCurrent }: any) => {
 
 const Header = () => (
   <HeaderWrapper role="navigation" aria-label="navigation">
-    <ListItem className="nav-item">
-      <NavLink as={Link} to="/" getProps={isActive}>
-        home
-      </NavLink>
-    </ListItem>
+    <NavLink as={Link} to="/" getProps={isActive}>
+      <Logo src={logo} alt="logo" aria-label="logo" />
+    </NavLink>
+
     <ListItem className="nav-item">
       <NavLink as={Link} to="/blog" getProps={isPartiallyActive}>
         blog
-      </NavLink>
-    </ListItem>
-    <ListItem className="nav-item">
-      <NavLink as={Link} to="/portfolio" getProps={isPartiallyActive}>
-        work
       </NavLink>
     </ListItem>
     <ListItem className="nav-item">
