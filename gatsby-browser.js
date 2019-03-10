@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import posed, { PoseGroup } from 'react-pose';
 import Layout from './src/components/Layout';
 

@@ -5,6 +5,5 @@ import Contact from '../src/components/Contact';
 test('Render the contact page', () => {
   const { getByTestId } = render(<Contact />);
   expect(getByTestId('email')).toBeInTheDocument();
-  expect(getByTestId('linkedin')).toBeInTheDocument();
   expect(getByTestId('github')).toBeInTheDocument();
 });

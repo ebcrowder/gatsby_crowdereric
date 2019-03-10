@@ -1,10 +1,12 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
+import posed from 'react-pose';
+
 import logo from '../img/logo.svg';
 
 const ListItem = styled.li`
-  align-self: end;
+  justify-self: center;
 `;
 
 const HeaderWrapper = styled.nav`
@@ -31,9 +33,24 @@ const NavLink: any = styled.a`
 `;
 
 const Logo = styled.img`
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
+  align-self: auto;
 `;
+
+const LogoContainer = posed.div({
+  hoverable: true,
+  pressable: true,
+  init: {
+    scale: 1,
+  },
+  hover: {
+    scale: 1.2,
+  },
+  press: {
+    scale: 1.1,
+  },
+});
 
 const isPartiallyActive = ({ isPartiallyCurrent }: any) => {
   return isPartiallyCurrent ? { 'partially-active': 'true' } : null;
@@ -46,7 +63,9 @@ const isActive = ({ isCurrent }: any) => {
 const Header = () => (
   <HeaderWrapper role="navigation" aria-label="navigation">
     <NavLink as={Link} to="/" getProps={isActive}>
-      <Logo src={logo} alt="logo" aria-label="logo" />
+      <LogoContainer>
+        <Logo src={logo} alt="logo" aria-label="logo" />
+      </LogoContainer>
     </NavLink>
 
     <ListItem className="nav-item">
@@ -57,11 +76,6 @@ const Header = () => (
     <ListItem className="nav-item">
       <NavLink as={Link} to="/about" getProps={isPartiallyActive}>
         about
-      </NavLink>
-    </ListItem>
-    <ListItem className="nav-item">
-      <NavLink as={Link} to="/contact" getProps={isPartiallyActive}>
-        contact
       </NavLink>
     </ListItem>
   </HeaderWrapper>

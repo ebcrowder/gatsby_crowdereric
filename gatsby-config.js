@@ -5,11 +5,11 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     title: 'e. crowder | web developer',
+    description: `blog and portfolio`,
+    author: `Eric Crowder`,
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-stylus',
-    'gatsby-plugin-sass',
     'gatsby-plugin-styled-components',
     'gatsby-plugin-typescript',
     {
@@ -19,21 +19,15 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-favicon',
+      resolve: `gatsby-plugin-manifest`,
       options: {
-        logo: './src/favicon.png',
-        injectHTML: true,
-        icons: {
-          android: true,
-          appleIcon: true,
-          appleStartup: true,
-          coast: false,
-          favicons: true,
-          firefox: true,
-          twitter: false,
-          yandex: false,
-          windows: false,
-        },
+        name: `ec-blog`,
+        short_name: `ec-blog`,
+        start_url: `/`,
+        background_color: `#212121`,
+        theme_color: `#212121`,
+        display: `standalone`,
+        icon: `src/img/logo.svg`,
       },
     },
     {

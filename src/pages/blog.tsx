@@ -1,5 +1,7 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
+
+import SEO from '../components/SEO';
 import PostLink from '../components/PostLink';
 
 interface BlogProps {
@@ -31,7 +33,12 @@ const Blog: React.FunctionComponent<BlogProps> = ({
     .filter(edge => !!edge.node.frontmatter.date)
     .map(edge => <PostLink key={edge.node.id} post={edge.node} />);
 
-  return <div>{Posts}</div>;
+  return (
+    <>
+      <SEO title="blog" />
+      <div>{Posts}</div>
+    </>
+  );
 };
 
 export default Blog;
