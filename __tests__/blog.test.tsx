@@ -1,27 +1,20 @@
 import { render } from 'react-testing-library';
 import * as React from 'react';
-import Blog from '../src/pages/Blog';
+import PostLink from '../src/components/PostLink';
 
-test.skip('Render blog section with graphql queries', () => {
-  // const mockPostData = {
-  //   data: {
-  //     allMarkdownRemark: {
-  //       edges: [
-  //         {
-  //           node: {
-  //             excerpt: 'test excerpt',
-  //             id: '123-456-78910',
-  //             frontmatter: {
-  //               date: 'December 31, 2042',
-  //               path: '/2042-12-31',
-  //               title: 'test title 123',
-  //             },
-  //           },
-  //         },
-  //       ],
-  //     },
-  //   },
-  // };
-  // const { getByText } = render(<Blog data={mockPostData} />);
-  // expect(getByText('test title 123')).toBeInTheDocument();
+test('Render blog section with graphql queries', () => {
+  const { getByTestId } = render(
+    <PostLink
+      post={{
+        id: '1234abcd',
+        excerpt: 'test excerpt',
+        frontmatter: {
+          date: '12.31.3000',
+          path: '/path',
+          title: 'test title',
+        },
+      }}
+    />
+  );
+  expect(getByTestId('post-link-link')).toBeInTheDocument();
 });
