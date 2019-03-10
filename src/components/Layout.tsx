@@ -30,9 +30,8 @@ ul {
   list-style-type: none;
   padding-left: 0;
 }
-`;
 
-const ParentDiv = styled.div`
+p {
   padding-left: 10rem;
   padding-right: 10rem;
   padding-top: 0;
@@ -40,14 +39,15 @@ const ParentDiv = styled.div`
   @media (max-width: 900px) {
     padding: 0;
   }
+}
 `;
 
 export default ({ children }: any) => (
   <>
     <GlobalStyle />
     <Header />
-    <ParentDiv>
+    <div>
       <main>{children}</main>
-    </ParentDiv>
+    </div>
   </>
 );

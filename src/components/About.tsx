@@ -12,18 +12,16 @@ const About = () => (
         stretch my abilities.
       </p>
       <p>
-        When not building things indoors, I am an avid trail runner and spend a
-        lot of time running in gorgeous Forest Park. I love being a part of the
-        trail running community here in the Pacific Northwest and enjoy
+        When not building internet things indoors, I am an avid trail runner and
+        spend a lot of time running in gorgeous Forest Park. I love being a part
+        of the trail running community here in the Pacific Northwest and enjoy
         exploring the many trails located in Oregon and Washington. I also
         really enjoy hiking and camping.
       </p>
     </div>
 
     <div>
-      <h3>Skills</h3>
-
-      <div>Programming Languages & Tools:</div>
+      <h3>Toolbox</h3>
       <ul>
         <li>JavaScript (ES6+)</li>
         <li>React</li>
@@ -31,8 +29,21 @@ const About = () => (
         <li>PHP</li>
         <li>Docker</li>
         <li>Amazon Web Services</li>
+        <li>Figma</li>
       </ul>
     </div>
+
+    <h3>Projects</h3>
+    <ul>
+      <li>
+        <a href="https://www.darlingdance.com">darlingdance</a>
+      </li>
+      <li>
+        <a href="https://musing-davinci-817e4c.netlify.com/">
+          Morning Calm (in progress)
+        </a>
+      </li>
+    </ul>
 
     <h3>Talks</h3>
     <ul>
