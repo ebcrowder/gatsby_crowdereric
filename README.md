@@ -3,15 +3,4 @@
 
 # portfolio
 
-Portfolio website built with React utilizing Gatsby.
-
-![alt text](/portfolio.jpg?raw=true 'portfolio')
-
-## Deployment
-
-- https://www.crowdereric.com
-
-## Built With
-
-- [React](https://reactjs.org/) - Javascript library for front-end development
-- [Gatsby](https://www.gatsbyjs.org/) - Static site generator
+Personal website built with React utilizing Gatsby. The site is hosted via [Netlify](https://www.netlify.com). The site features a blog that renders posts based on Markdown.
