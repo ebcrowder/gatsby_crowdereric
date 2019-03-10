@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import styled from 'styled-components';
 import posed from 'react-pose';
 
-import logo from '../img/logo.svg';
+import logo from '../img/logo.png';
 
 const ListItem = styled.li`
   justify-self: center;
@@ -55,24 +55,25 @@ const isActive = ({ isCurrent }: any) => {
 };
 
 const Header = () => (
-  <HeaderWrapper role="navigation" aria-label="navigation">
-    <NavLink as={Link} to="/" getProps={isActive}>
-      <LogoContainer>
-        <Logo src={logo} alt="logo" aria-label="logo" />
-      </LogoContainer>
-    </NavLink>
-
-    <ListItem className="nav-item">
-      <NavLink as={Link} to="/blog" getProps={isPartiallyActive}>
-        blog
+  <>
+    <HeaderWrapper role="navigation" aria-label="navigation">
+      <NavLink as={Link} to="/" getProps={isActive}>
+        <LogoContainer>
+          <Logo src={logo} alt="logo" aria-label="logo" />
+        </LogoContainer>
       </NavLink>
-    </ListItem>
-    <ListItem className="nav-item">
-      <NavLink as={Link} to="/about" getProps={isPartiallyActive}>
-        about
-      </NavLink>
-    </ListItem>
-  </HeaderWrapper>
+      <ListItem className="nav-item">
+        <NavLink as={Link} to="/blog" getProps={isPartiallyActive}>
+          blog
+        </NavLink>
+      </ListItem>
+      <ListItem className="nav-item">
+        <NavLink as={Link} to="/about" getProps={isPartiallyActive}>
+          about
+        </NavLink>
+      </ListItem>
+    </HeaderWrapper>
+  </>
 );
 
 export default Header;

@@ -7,7 +7,7 @@ import Contact from '../components/Contact';
 const SplashPage = () => (
   <>
     <SEO
-      title="index"
+      title="hello"
       keywords={[
         'blog',
         'tech',
