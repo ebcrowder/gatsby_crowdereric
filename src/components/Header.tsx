@@ -11,17 +11,11 @@ const ListItem = styled.li`
 
 const HeaderWrapper = styled.nav`
   display: grid;
-  grid-template-columns: 5rem 5rem 5rem 5rem 5rem;
+  grid-template-columns: 5rem 5rem 5rem;
   grid-template-rows: 5rem;
   align-items: center;
   justify-items: center;
   list-style-type: none;
-
-  @media (max-width: 900px) {
-    grid-template-columns: 5rem 5rem 5rem 5rem 5rem;
-    font-size: 13px;
-    text-align: center;
-  }
 `;
 
 const NavLink: any = styled.a`
