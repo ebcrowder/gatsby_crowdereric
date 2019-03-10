@@ -12,11 +12,11 @@ const About = () => (
         stretch my abilities.
       </p>
       <p>
-        When not building internet things indoors, I am an avid trail runner and
-        spend a lot of time running in gorgeous Forest Park. I love being a part
-        of the trail running community here in the Pacific Northwest and enjoy
-        exploring the many trails located in Oregon and Washington. I also
-        really enjoy hiking and camping.
+        When not building internet things indoors, I spend a lot of time running
+        in gorgeous Forest Park. I love being a part of the trail running
+        community here in the Pacific Northwest and enjoy exploring the many
+        trails located in Oregon and Washington. I also really enjoy hiking and
+        camping.
       </p>
     </div>
 
@@ -24,7 +24,9 @@ const About = () => (
       <h3>Toolbox</h3>
       <ul>
         <li>JavaScript (ES6+)</li>
+        <li>TypeScript</li>
         <li>React</li>
+        <li>GraphQL</li>
         <li>Node</li>
         <li>PHP</li>
         <li>Docker</li>
@@ -47,7 +49,7 @@ const About = () => (
 
     <h3>Talks</h3>
     <ul>
-      <li>Gatsby JS - Front End PDX - August 2018</li>
+      <li>GatsbyJS - Front End PDX - August 2018</li>
     </ul>
 
     <h3>Certifications</h3>

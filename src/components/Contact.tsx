@@ -1,16 +1,17 @@
 import * as React from 'react';
 import styled from 'styled-components';
 
-const ContactInfo = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-`;
-
 const ContactContainer = styled.div`
   display: grid;
   grid-template-columns: 10rem 10rem;
   grid-template-rows: 5rem;
+  justify-content: center;
+  margin-top: 10rem;
+`;
+
+const ContactInfo = styled.div`
+  display: flex;
+  flex-direction: column;
   justify-content: center;
 `;
 
