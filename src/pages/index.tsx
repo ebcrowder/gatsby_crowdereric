@@ -2,7 +2,6 @@ import * as React from 'react';
 
 import SEO from '../components/SEO';
 import Splash from '../components/Splash';
-import Contact from '../components/Contact';
 
 const SplashPage = () => (
   <>
@@ -19,7 +18,6 @@ const SplashPage = () => (
       ]}
     />
     <Splash />
-    <Contact />
   </>
 );
 

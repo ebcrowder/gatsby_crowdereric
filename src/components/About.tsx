@@ -1,4 +1,23 @@
 import * as React from 'react';
+import styled from 'styled-components';
+import Box from '../components/Box';
+
+const BoxGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+  grid-template-rows: 300px;
+  justify-items: center;
+  margin-top: 5rem;
+  margin-left: 15rem;
+  margin-right: 15rem;
+  column-gap: 1rem;
+  row-gap: 1rem;
+
+  @media (max-width: 900px) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+`;
 
 const About = () => (
   <div>
@@ -20,42 +39,33 @@ const About = () => (
       </p>
     </div>
 
-    <div>
-      <h3>Toolbox</h3>
-      <ul>
-        <li>JavaScript (ES6+)</li>
-        <li>TypeScript</li>
-        <li>React</li>
-        <li>GraphQL</li>
-        <li>Node</li>
-        <li>PHP</li>
-        <li>Docker</li>
-        <li>Amazon Web Services</li>
-        <li>Figma</li>
-      </ul>
-    </div>
-
-    <h3>Projects</h3>
-    <ul>
-      <li>
-        <a href="https://www.darlingdance.com">darlingdance</a>
-      </li>
-      <li>
-        <a href="https://musing-davinci-817e4c.netlify.com/">
-          Morning Calm (in progress)
-        </a>
-      </li>
-    </ul>
-
-    <h3>Talks</h3>
-    <ul>
-      <li>GatsbyJS - Front End PDX - August 2018</li>
-    </ul>
-
-    <h3>Certifications</h3>
-    <ul>
-      <li>Amazon Web Services (AWS) Certified Developer - Associate</li>
-    </ul>
+    <BoxGrid>
+      <Box
+        title="Toolbox"
+        text={[
+          'JavaScript',
+          'TypeScript',
+          'React',
+          'Node.js',
+          'GraphQL',
+          'PHP',
+          'Docker',
+          'Amazon Web Services',
+        ]}
+      />
+      <Box
+        title="Projects"
+        text={[
+          <a href="https://www.darlingdance.com">darlingdance</a>,
+          <a href="https://musing-davinci-817e4c.netlify.com/">Morning Calm</a>,
+        ]}
+      />
+      <Box title="Talks" text={['GatsbyJS - Front End PDX - August 2018']} />
+      <Box
+        title="Certifications"
+        text={['Amazon Web Services (AWS) Certified Developer - Associate']}
+      />
+    </BoxGrid>
   </div>
 );
 

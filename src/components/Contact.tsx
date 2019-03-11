@@ -6,7 +6,7 @@ const ContactContainer = styled.div`
   grid-template-columns: 10rem 10rem;
   grid-template-rows: 5rem;
   justify-content: center;
-  margin-top: 10rem;
+  margin-top: 5rem;
 `;
 
 const ContactInfo = styled.div`

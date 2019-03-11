@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
 body, html {
   background-color: #212121;
   color: #ffffff;
-  font-family: 'Fira Code', monospace;
+  font-family: 'Fira Mono', monospace;
   text-align: center;
   font-size: 18px;
   height: 100%;
@@ -32,8 +32,8 @@ ul {
 }
 
 p {
-  padding-left: 10rem;
-  padding-right: 10rem;
+  padding-left: 15rem;
+  padding-right: 15rem;
   padding-top: 0;
 
   @media (max-width: 900px) {
