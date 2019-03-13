@@ -2,4 +2,4 @@
 https://objective-lewin-5dca16.netlify.com/* https://www.ebcrowder.dev/:splat 301!
 
 # These extra rules are required because HTTPS is not forced
-http://objective-lewin-5dca16.netlify.com/* https://ebcrowder.dev/:splat 301!
+http://objective-lewin-5dca16.netlify.com/* https://www.ebcrowder.dev/:splat 301!
