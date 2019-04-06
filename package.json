@@ -14,7 +14,7 @@
     "babel-plugin-styled-components": "^1.10.0",
     "dotenv": "^6.2.0",
     "gatsby": "^2.1.27",
-    "gatsby-cli": "^2.4.14",
+    "gatsby-cli": "^2.5.5",
     "gatsby-mdx": "^0.4.3",
     "gatsby-plugin-google-analytics": "^2.0.16",
     "gatsby-plugin-manifest": "^2.0.22",
