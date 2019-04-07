@@ -14,8 +14,8 @@ const BoxContainer = styled.div`
   right: 0%;
   top: 0%;
   bottom: 0%;
-  background: #00bfa5;
-  box-shadow: 0px 4px 4px #000000;
+  background: #424242;
+  box-shadow: 0px 8px 8px #000000;
   border-radius: 20px;
 `;
 
@@ -27,7 +27,7 @@ const TextContainer = styled.ul`
   text-align: left;
 
   a:hover {
-    color: #ff006b;
+    color: #00bfa5;
   }
 `;
 

@@ -10,7 +10,6 @@ const BoxGrid = styled.div`
   margin-top: 5rem;
   margin-left: 15rem;
   margin-right: 15rem;
-  column-gap: 1rem;
   row-gap: 1rem;
 
   @media (max-width: 900px) {
