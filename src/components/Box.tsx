@@ -14,7 +14,7 @@ const BoxContainer = styled.div`
   right: 0%;
   top: 0%;
   bottom: 0%;
-  background: #424242;
+  background: #313131;
   box-shadow: 0px 8px 8px #000000;
   border-radius: 20px;
 `;
