@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
-
+import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import PostLink from '../components/PostLink';
 
@@ -35,6 +35,7 @@ const Blog: React.FunctionComponent<BlogProps> = ({
 
   return (
     <>
+      <Layout />
       <SEO title="blog" />
       <div>{Posts}</div>
     </>

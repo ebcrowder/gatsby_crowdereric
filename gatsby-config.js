@@ -9,15 +9,15 @@ module.exports = {
     author: `Eric Crowder`,
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-typescript',
-    'gatsby-mdx',
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-typescript`,
+    `gatsby-mdx`,
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {},
     },
     {
-      resolve: 'gatsby-plugin-google-analytics',
+      resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: process.env.GATSBY_TRACKING_ID,
       },
@@ -35,21 +35,21 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: `gatsby-source-filesystem`,
       options: {
         name: 'img',
         path: `${__dirname}/src/img`,
       },
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: `gatsby-source-filesystem`,
       options: {
         name: 'blog',
         path: `${__dirname}/src/blog`,
       },
     },
-    'gatsby-transformer-remark',
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
+    `gatsby-transformer-remark`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
   ],
 };
