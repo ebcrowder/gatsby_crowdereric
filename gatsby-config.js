@@ -10,9 +10,12 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-styled-components',
     'gatsby-plugin-typescript',
     'gatsby-mdx',
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {},
+    },
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
