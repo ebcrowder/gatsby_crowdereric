@@ -1,5 +1,5 @@
 module.exports = {
-  setupTestFrameworkScriptFile: './jest.setup.js',
+  setupFilesAfterEnv: ['./jest.setup.js'],
   transform: {
     '^.+\\.tsx?$': 'ts-jest',
     '^.+\\.jsx?$': '<rootDir>/jest-preprocess.js',
