@@ -73,11 +73,27 @@ const About = () => (
         <Box
           title="Projects"
           text={[
-            <a href="https://www.darlingdance.com">darlingdance</a>,
-            <a href="https://musing-davinci-817e4c.netlify.com/">
+            <a
+              className="darling"
+              key="darling"
+              href="https://www.darlingdance.com"
+            >
+              darlingdance
+            </a>,
+            <a
+              className="morning"
+              key="morning"
+              href="https://musing-davinci-817e4c.netlify.com/"
+            >
               Morning Calm
             </a>,
-            <a href="https://github.com/ebcrowder">... and more at github!</a>,
+            <a
+              className="portfolio"
+              key="portfolio"
+              href="https://github.com/ebcrowder"
+            >
+              ... and more at github!
+            </a>,
           ]}
         />
       </BoxContainer>

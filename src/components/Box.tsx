@@ -2,7 +2,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 
 interface BoxProps {
-  text: string[];
+  text: string[] | JSX.Element[];
   title: string;
 }
 
