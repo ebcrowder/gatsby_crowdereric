@@ -8,8 +8,9 @@ const ContactContainer = styled.div`
 const Contact = () => (
   <ContactContainer>
     <p>
-      I'm available to work on open source opportunities. Feel free to reach out
-      to <a href="mailto:ebcrowder@gmail.com">me</a> for coffee!
+      I'm available to work on freelance and open source opportunities. Feel
+      free to reach out to <a href="mailto:ebcrowder@gmail.com">me</a> for
+      coffee!
     </p>
   </ContactContainer>
 );
