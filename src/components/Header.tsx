@@ -11,7 +11,7 @@ const ListItem = styled.li`
 
 const HeaderWrapper = styled.nav`
   display: grid;
-  grid-template-columns: 5rem 5rem 5rem;
+  grid-template-columns: 5rem 5rem 5rem 5rem;
   grid-template-rows: 5rem;
   align-items: center;
   justify-items: center;
@@ -70,6 +70,11 @@ const Header = () => (
       <ListItem className="nav-item">
         <NavLink as={Link} to="/about" getProps={isPartiallyActive}>
           about
+        </NavLink>
+      </ListItem>
+      <ListItem className="nav-item">
+        <NavLink as={Link} to="/cv" getProps={isPartiallyActive}>
+          cv
         </NavLink>
       </ListItem>
     </HeaderWrapper>

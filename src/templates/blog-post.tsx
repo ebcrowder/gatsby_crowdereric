@@ -15,7 +15,7 @@ interface PageQueryProps {
   };
 }
 
-const Template: React.FunctionComponent<PageQueryProps> = ({ data }) => {
+const BlogTemplate: React.FunctionComponent<PageQueryProps> = ({ data }) => {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
   return (
@@ -35,7 +35,7 @@ const Template: React.FunctionComponent<PageQueryProps> = ({ data }) => {
   );
 };
 
-export default Template;
+export default BlogTemplate;
 
 export const pageQuery = graphql`
   query($path: String!) {

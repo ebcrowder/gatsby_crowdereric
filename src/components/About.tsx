@@ -5,18 +5,19 @@ import Box from '../components/Box';
 
 const BoxGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, 350px);
   justify-items: center;
+  justify-content: center;
   margin-top: 5rem;
   margin-left: 10rem;
   margin-right: 10rem;
   row-gap: 1rem;
 
-  @media (max-width: 900px) {
+  /* @media (max-width: 900px) {
     margin-left: 0;
     margin-right: 0;
     margin-top: 0;
-  }
+  } */
 `;
 
 const BoxContainer = posed.div({
@@ -99,12 +100,6 @@ const About = () => (
       </BoxContainer>
       <BoxContainer>
         <Box title="Talks" text={['GatsbyJS - Front End PDX - August 2018']} />
-      </BoxContainer>
-      <BoxContainer>
-        <Box
-          title="Certifications"
-          text={['Amazon Web Services (AWS) Certified Developer - Associate']}
-        />
       </BoxContainer>
     </BoxGrid>
   </div>

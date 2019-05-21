@@ -8,8 +8,8 @@ interface BoxProps {
 
 const BoxContainer = styled.div`
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 280px;
   left: 0%;
   right: 0%;
   top: 0%;
