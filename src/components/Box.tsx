@@ -2,7 +2,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 
 interface BoxProps {
-  text: string[] | JSX.Element[];
+  text: string[];
   title: string;
 }
 
@@ -37,7 +37,7 @@ const Box: React.FunctionComponent<BoxProps> = props => {
     <BoxContainer>
       <TextContainer>
         <h3>{props.title}</h3>
-        {props.text.map((item, i) => (
+        {props.text.map((item: string, i: number) => (
           <li key={i}>{item}</li>
         ))}
       </TextContainer>

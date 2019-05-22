@@ -33,17 +33,17 @@ const Logo = styled.img`
 `;
 
 const LogoContainer = posed.div({
-  hoverable: true,
-  pressable: true,
-  init: {
-    scale: 1,
-  },
   hover: {
     scale: 1.2,
+  },
+  hoverable: true,
+  init: {
+    scale: 1,
   },
   press: {
     scale: 1.1,
   },
+  pressable: true,
 });
 
 const isPartiallyActive = ({ isPartiallyCurrent }: any) => {
