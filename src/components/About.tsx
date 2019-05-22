@@ -5,19 +5,13 @@ import Box from '../components/Box';
 
 const BoxGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, 350px);
+  grid-template-columns: repeat(auto-fit, 300px);
   justify-items: center;
   justify-content: center;
   margin-top: 5rem;
-  margin-left: 10rem;
-  margin-right: 10rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
   row-gap: 1rem;
-
-  /* @media (max-width: 900px) {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-  } */
 `;
 
 const BoxContainer = posed.div({

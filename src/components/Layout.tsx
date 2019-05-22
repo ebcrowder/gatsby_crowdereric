@@ -32,8 +32,8 @@ ul {
 }
 
 p {
-  padding-left: 15rem;
-  padding-right: 15rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
   padding-top: 0;
 
   @media (max-width: 900px) {
