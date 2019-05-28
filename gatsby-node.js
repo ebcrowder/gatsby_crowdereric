@@ -62,7 +62,7 @@ exports.createPages = ({ actions, graphql }) => {
     });
 
     // Make tag pages
-    return tags.forEach(tag => {
+    tags.forEach(tag => {
       const tagPath = `/tags/${tag}/`;
 
       createPage({
