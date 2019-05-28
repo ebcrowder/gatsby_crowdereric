@@ -1,4 +1,5 @@
 const path = require('path');
+const { createFilePath } = require('gatsby-source-filesystem');
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
@@ -34,19 +35,56 @@ exports.createPages = ({ actions, graphql }) => {
     }
 
     filteredBlogPosts.forEach(({ node }) => {
+      const id = node.id;
       createPage({
         path: node.frontmatter.path,
+        tags: node.frontmatter.tags,
         component: blogPostTemplate,
-        context: {},
+        context: { id },
       });
     });
 
-    return filteredCV.forEach(({ node }) => {
+    filteredCV.forEach(({ node }) => {
       createPage({
         path: node.frontmatter.path,
         component: cvTemplate,
         context: {},
       });
     });
+
+    // Tag pages:
+    let tags = [];
+    // Iterate through each post, putting all found tags into `tags`
+    filteredBlogPosts.forEach(({ node }) => {
+      if (node.frontmatter.tags) {
+        tags = tags.concat(node.frontmatter.tags);
+      }
+    });
+
+    // Make tag pages
+    return tags.forEach(tag => {
+      const tagPath = `/tags/${tag}/`;
+
+      createPage({
+        path: tagPath,
+        component: path.resolve(`src/templates/tags.tsx`),
+        context: {
+          tag,
+        },
+      });
+    });
   });
+};
+
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions;
+
+  if (node.internal.type === `MarkdownRemark`) {
+    const value = createFilePath({ node, getNode });
+    createNodeField({
+      name: `slug`,
+      node,
+      value,
+    });
+  }
 };

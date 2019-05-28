@@ -16,7 +16,7 @@ I am a software engineer based in Portland, OR that enjoys learning, collaborati
 **Cascade Energy, Portland, OR**  
 Software Engineer - July 2018 - Current
 
-- Work in a cross-functional team to deliver front-end features and implement back-end services.
+Work in a cross-functional team to deliver front-end features and implement back-end services.
 - Implement automated testing of clients using Cypress, an E2E library and test runner.
 - Use the Amazon Web Services (AWS) SDK to interact with infrastructure and services.
 - Collaborate with other engineers on developing plans for implementing front-end features and services.

@@ -20,7 +20,8 @@ const PostLink: React.FunctionComponent<PostLinkProps> = ({ post }) => (
       <Link to={post.frontmatter.path}>
         <p className="post-link-link" data-testid="post-link-link">
           {post.frontmatter.title}
-          &nbsp; ({post.frontmatter.date})
+          <span>&nbsp;</span>
+          <span>{post.frontmatter.date}</span>
         </p>
       </Link>
     </div>
