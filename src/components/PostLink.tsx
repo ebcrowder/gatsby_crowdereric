@@ -16,9 +16,9 @@ interface PostLinkProps {
 const PostLink: React.FunctionComponent<PostLinkProps> = ({ post }) => (
   <>
     <h1>blog</h1>
-    <div className="post-link">
+    <div>
       <Link to={post.frontmatter.path}>
-        <p className="post-link-link" data-testid="post-link-link">
+        <p data-testid="post-link-link">
           {post.frontmatter.title}
           <span>&nbsp;</span>
           <span>{post.frontmatter.date}</span>

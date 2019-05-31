@@ -6,6 +6,7 @@ exports.createPages = ({ actions, graphql }) => {
 
   const blogPostTemplate = path.resolve('src/templates/blog-post.tsx');
   const cvTemplate = path.resolve('src/templates/cv.tsx');
+  const tagsTemplate = path.resolve(`src/templates/tags.tsx`);
 
   return graphql(`
     {
@@ -17,6 +18,7 @@ exports.createPages = ({ actions, graphql }) => {
           node {
             frontmatter {
               path
+              tags
             }
           }
         }
@@ -67,7 +69,7 @@ exports.createPages = ({ actions, graphql }) => {
 
       createPage({
         path: tagPath,
-        component: path.resolve(`src/templates/tags.tsx`),
+        component: tagsTemplate,
         context: {
           tag,
         },
