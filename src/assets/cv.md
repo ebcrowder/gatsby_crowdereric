@@ -29,11 +29,6 @@ Contract Web Developer - May 2018 - July 2018
 - Resolved issues on production applications and projects in development stages.
 - Provided excellent service for retainer clients.
 
-**Prosper IT Consulting, Portland, OR**  
- Intern - December 2017
-
-- Contributed to the development of a travel-focused social network application by building messaging functionalities and styling components.
-
 **Perkins & Co., Portland, OR**  
 Audit Manager - October 2016 - January 2018
 
