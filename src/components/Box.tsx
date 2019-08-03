@@ -32,7 +32,7 @@ const TextContainer = styled.ul`
   }
 
   a:hover {
-    color: #546e7a;
+    font-weight: bold;
   }
 `;
 

@@ -23,7 +23,7 @@ a {
 }
 
 a:hover {
-  color: #546e7a;
+  font-weight: bold;
 }
 
 ul {

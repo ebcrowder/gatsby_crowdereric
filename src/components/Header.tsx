@@ -21,8 +21,6 @@ const HeaderWrapper = styled.nav`
 const NavLink: any = styled.a`
   &.active,
   &[partially-active] {
-    color: #546e7a;
-    fill: #546e7a;
     font-weight: bold;
   }
 `;
