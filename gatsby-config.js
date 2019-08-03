@@ -11,7 +11,6 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-typescript`,
-    `gatsby-mdx`,
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {},

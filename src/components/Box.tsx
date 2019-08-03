@@ -27,8 +27,12 @@ const TextContainer = styled.ul`
   color: #ffffff;
   text-align: left;
 
+  a {
+    color: #ffffff;
+  }
+
   a:hover {
-    color: #00bfa5;
+    color: #546e7a;
   }
 `;
 

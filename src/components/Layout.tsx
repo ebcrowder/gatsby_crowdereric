@@ -5,8 +5,8 @@ import Header from '../components/Header';
 
 const GlobalStyle = createGlobalStyle`
 body, html {
-  background-color: #212121;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
   font-family: 'Fira Mono', monospace;
   text-align: center;
   font-size: 18px;
@@ -18,12 +18,12 @@ body, html {
 }
 
 a {
-  color: #fafafa;
+  color: #000000;
   text-decoration: none;
 }
 
 a:hover {
-  color: #00bfa5;
+  color: #546e7a;
 }
 
 ul {
