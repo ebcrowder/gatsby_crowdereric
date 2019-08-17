@@ -18,12 +18,11 @@ const HeaderWrapper = styled.nav`
   list-style-type: none;
 `;
 
-const NavLink: any = styled.a`
-  &.active,
-  &[partially-active] {
-    font-weight: bold;
-  }
-`;
+const styles = {
+  active: {
+    fontWeight: 'bold',
+  },
+};
 
 const Logo = styled.img`
   width: 80px;
@@ -45,39 +44,29 @@ const LogoContainer = posed.div({
   pressable: true,
 });
 
-const isPartiallyActive = ({ isPartiallyCurrent }: any) => {
-  return isPartiallyCurrent ? { 'partially-active': 'true' } : null;
-};
-
-const isActive = ({ isCurrent }: any) => {
-  return isCurrent ? { 'partially-active': 'true' } : null;
-};
-
 const Header = () => (
-  <>
-    <HeaderWrapper role="navigation" aria-label="navigation">
-      <NavLink as={Link} to="/" getProps={isActive}>
-        <LogoContainer>
-          <Logo src={logo} alt="logo" aria-label="logo" />
-        </LogoContainer>
-      </NavLink>
-      <ListItem className="nav-item">
-        <NavLink as={Link} to="/blog" getProps={isPartiallyActive}>
-          blog
-        </NavLink>
-      </ListItem>
-      <ListItem className="nav-item">
-        <NavLink as={Link} to="/about" getProps={isPartiallyActive}>
-          about
-        </NavLink>
-      </ListItem>
-      <ListItem className="nav-item">
-        <NavLink as={Link} to="/cv" getProps={isPartiallyActive}>
-          cv
-        </NavLink>
-      </ListItem>
-    </HeaderWrapper>
-  </>
+  <HeaderWrapper role="navigation" aria-label="navigation">
+    <Link to="/" partiallyActive={true} activeStyle={styles.active}>
+      <LogoContainer>
+        <Logo src={logo} alt="logo" aria-label="logo" />
+      </LogoContainer>
+    </Link>
+    <ListItem className="nav-item">
+      <Link to="/blog" partiallyActive={true} activeStyle={styles.active}>
+        blog
+      </Link>
+    </ListItem>
+    <ListItem className="nav-item">
+      <Link to="/about" partiallyActive={true} activeStyle={styles.active}>
+        about
+      </Link>
+    </ListItem>
+    <ListItem className="nav-item">
+      <Link to="/cv" partiallyActive={true} activeStyle={styles.active}>
+        cv
+      </Link>
+    </ListItem>
+  </HeaderWrapper>
 );
 
 export default Header;

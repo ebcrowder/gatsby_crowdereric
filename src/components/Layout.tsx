@@ -51,6 +51,14 @@ p {
     padding: 0;
   }
 }
+
+ul {
+  vertical-align: middle;
+  list-style-type: none;
+}
+
+
+
 `;
 
 export default ({ children }: any) => (
