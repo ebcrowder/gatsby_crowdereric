@@ -8,12 +8,31 @@ body, html {
   background-color: #ffffff;
   color: #000000;
   font-family: 'Fira Mono', monospace;
-  text-align: center;
+  text-align: left;
   font-size: 18px;
   height: 100%;
+  margin-left: 1rem;
+  margin-right: 1rem;
 
   @media (max-width: 900px) {
     font-size: 16px;
+  }
+}
+
+.gatsby-highlight {
+  width: 800px;
+  margin: 0 auto;
+
+  pre {
+    font-size: 16px;
+  }
+
+  @media (max-width: 900px) {
+    width: 300px;
+  
+    pre {
+     font-size: 10px;
+    }
   }
 }
 
@@ -26,16 +45,8 @@ a:hover {
   font-weight: bold;
 }
 
-ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
 p {
-  padding-left: 5rem;
-  padding-right: 5rem;
   padding-top: 0;
-
   @media (max-width: 900px) {
     padding: 0;
   }

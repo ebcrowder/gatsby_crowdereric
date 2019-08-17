@@ -21,11 +21,17 @@ const BoxContainer = styled.div`
 
 const TextContainer = styled.ul`
   position: relative;
-  margin: 1rem;
   padding-top: 1rem;
+  padding-left: 1rem;
   font-size: 18px;
   color: #ffffff;
   text-align: left;
+  list-style-type: none;
+
+  pre {
+    text-align: center;
+    font-size: 16px;
+  }
 
   a {
     color: #ffffff;

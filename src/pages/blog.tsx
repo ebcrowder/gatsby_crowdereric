@@ -37,6 +37,7 @@ const Blog: React.FunctionComponent<BlogProps> = ({
     <>
       <Layout />
       <SEO title="blog" />
+      <h1>blog</h1>
       <div>{Posts}</div>
     </>
   );

@@ -49,5 +49,5 @@ BSBA - Accounting - August 2003 - May 2007
 
 ## CERTIFICATIONS
 
-Amazon Web Services (AWS) Certified Developer - Associate  
-Software Developer Certificate - The Tech Academy - Portland, OR
+- Amazon Web Services (AWS) Certified Developer - Associate
+- Software Developer Certificate - The Tech Academy - Portland, OR

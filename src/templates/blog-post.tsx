@@ -10,6 +10,7 @@ interface PageQueryProps {
         date: string;
         path: string;
         title: string;
+        tags: [];
       };
     };
   };
