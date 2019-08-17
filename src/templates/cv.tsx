@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
-import styled from 'styled-components';
+import SEO from '../components/SEO';
 import Layout from '../components/Layout';
 
 interface PageQueryProps {
@@ -16,6 +16,7 @@ const CVTemplate: React.FunctionComponent<PageQueryProps> = ({ data }) => {
   const { html } = markdownRemark;
   return (
     <>
+      <SEO title="cv" />
       <Layout />
       <div className="cv-container">
         <div className="cv-post">
