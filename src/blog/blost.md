@@ -1,0 +1,53 @@
+---
+path: '/blog/2019-09-13'
+date: '2019-09-13'
+title: 'What I Learned From My First Year as a Software Developer'
+tags: ['programming']
+---
+
+# What I Learned From My First Year as a Software Developer
+
+## Background - career switch
+
+Like a lot of individuals in software development, I worked in a different industry prior to making the career shift. I recently completed my first year as a software developer at Cascade Energy and thought I would share a few bits of information that may be of use to others who are beginning to embark on a similar path.
+
+After working 10 years in the accounting field, I acquired an array of skills and experiences that ultimately presented software development as a viable alternative career path. It should be noted that these skills are not specific to accounting; in fact, you may find that they are universal skills for all endeavors. Therefore, I have purposely made light comparisons to my previous career experience for illustration reasons only.
+
+In no particular order:
+
+**Communication**
+
+Being able foster collaboration between team members, external customers, and other stakeholders is a universal skill that is important in all fields.
+
+A concept that I was exposed to a few years ago was the idea of "emotional intelligence." I believe this is a fundamental prerequisite for effective communication and can be summarized as effective communicators should possess traits such as having empathy for others, being self-aware, and posessing social skills that inspire others. To read more about emotional intelligence, see Daniel Goleman's original article titled _What Makes a Leader_ in the [Harvard Business Review](https://hbr.org/2004/01/what-makes-a-leader).
+
+At Cascade Energy, we are a small team of engineers (less than 10 people) that work across the stack on a regular basis. We each have specializations, such as front-end, back-end, infrastructure, etc., but our team structure is such that we have to be able to work across the stack with confidence to ensure that the milestones in our roadmap are met.
+
+To faciliate this, we make communication the utmost priority. When picking up a ticket that I may not be familiar with, such as writing a AWS lambda function, I will read the code for similar repos, look over blog posts and consult with more experienced developers on our team before starting. This will ensure that I am able to adequately plan a solution before coding.
+
+Our stack is written mostly in JavaScript. Luckily, I had focused on front-end development when learning to code and was fairly comfortable writing JavaScript. So, that made working with our Node services slightly less daunting. As a team, we foster an encouraging environment that encourages developers to work on tasks that are outside their comfort zone. So, planning solutions with other team members, pair programming, and other knowledge sharing was instrumental in my personal development.
+
+_Side note_ - ultimately, when you land that first programming job, you will never be able to anticipate what stack you will be working in. As long as you are comfortable with one language, you can easily pick up another - the core analytical skills that you acquire while learning your first langauge remain constant.
+
+**Problem Solving**
+
+Whether it is implementing a new feature, fixing a bug, researching a topic, or sketching out the techincal details of an infrastructure ticket, problem solving is inherent in what software developers do each day. Observing problems at a high level allows one to deeply understand the issue, which sets them up to adequately weigh possible solutions.
+
+In practice, the following has worked well for me:
+
+1. Summarize the problem in one paragraph.
+2. Using lists, define the following:
+   - potential causes of the problem.
+   - potential solutions to the problem.
+3. For each potential solution, outline the pros and cons of each.
+4. Select a solution and implement it
+
+Once a solution has been selected, sketch out how you would implement it. This could take the form of words, diagrams, pseudo-code, or whatever best illustrates the implementation. This document will serve as your roadmap for the code you will eventually write. Writing code in accordance with an outline is much more effective than writing code without one. By coding in accordance with an outline, you will be able to better track your progress and have an easier time debugging issues along the way. Besides, the code basically already been written - you are just essentially translating your outline to your programming language.
+
+**Debugging**
+
+Learning how to properly use debugging tools has had the most profound impact on programming skills. When I first started working as a programmer, my debugging strategy was limited to placing `logging` statements throughout the codebase and hoping that I would find clues as to the location of the problem.
+
+Logging statements are fine, but they should not be the only tool in your toolbox. Once I was introduced to the debugger in my browser and text editor, my understanding of our codebase increased by a significant magnitude.
+
+Debugger tools allow you to place breakpoints strategically and see what variables and functions (including arguments) resolve to. Further, in addition to the values that in scope with respect to your breakpoints, you can see all of the values throughout your program for a more holistic view of how the code is executing on each call. That way, you can understand `what` and `why` the variables and functions in your program are resolving in the manner they are. The combination of logging statements and debugging tools has enabled me to learn new codebases faster and therefore allow me to fix bugs and write features a lot more effectively.
