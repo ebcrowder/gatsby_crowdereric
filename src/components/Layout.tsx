@@ -53,12 +53,8 @@ p {
 }
 
 ul {
-  vertical-align: middle;
-  list-style-type: none;
+  margin-bottom: 20px;
 }
-
-
-
 `;
 
 export default ({ children }: any) => (
