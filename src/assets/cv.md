@@ -24,8 +24,7 @@ Software Engineer - July 2018 - Current
 **Common Era Collective / Talewind Visuals, LLC, Salem, OR**  
 Contract Web Developer - May 2018 - July 2018
 
-- Worked with designers on implementing website designs on web applications using technologies that best meet client vision and objectives.
-- Resolved issues on production applications and projects in development stages.
+- Worked with designers on implementing website designs using technologies that best meet client vision and objectives.
 - Provided excellent service for retainer clients.
 
 **Perkins & Co., Portland, OR**  
