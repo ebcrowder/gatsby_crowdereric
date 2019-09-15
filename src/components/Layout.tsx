@@ -45,6 +45,13 @@ a:hover {
   font-weight: bold;
 }
 
+p > a {
+  text-decoration-line: underline;
+  text-decoration-color: #FF0266;
+  text-decoration-style: solid;
+  font-weight: bold;
+}
+
 p {
   padding-top: 0;
   @media (max-width: 900px) {
@@ -52,8 +59,8 @@ p {
   }
 }
 
-ul {
-  margin-bottom: 20px;
+ol > li {
+  margin: 20px;
 }
 `;
 
