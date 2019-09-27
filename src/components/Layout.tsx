@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
 body, html {
   background-color: #ffffff;
   color: #000000;
-  font-family: 'Fira Mono', monospace;
+  font-family: Menlo, Monaco, Courier New, monospace, serif; 
   text-align: left;
   font-size: 18px;
   height: 100%;
