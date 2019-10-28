@@ -4,5 +4,5 @@ import Splash from '../src/components/Splash';
 
 test('Render the splash page', () => {
   const { getByText } = render(<Splash />);
-  expect(getByText('hello! ✌️')).toBeInTheDocument();
+  expect(getByText('hello')).toBeInTheDocument();
 });

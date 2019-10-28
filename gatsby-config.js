@@ -9,17 +9,12 @@ module.exports = {
     author: `Eric Crowder`,
   },
   plugins: [
+    `gatsby-plugin-preact`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-typescript`,
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {},
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: process.env.GATSBY_TRACKING_ID,
-      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
