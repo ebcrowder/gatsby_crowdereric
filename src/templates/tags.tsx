@@ -8,7 +8,7 @@ const TagRoute = props => {
   const postLinks = posts.map(post => (
     <li key={post.node.fields.slug}>
       <Link to={`/blog/${post.node.fields.slug}`}>
-        <h2>{post.node.frontmatter.title}</h2>
+        <b>{post.node.frontmatter.title}</b>
       </Link>
     </li>
   ));
