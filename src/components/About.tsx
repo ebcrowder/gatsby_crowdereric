@@ -1,32 +1,4 @@
 import * as React from 'react';
-import styled from 'styled-components';
-import posed from 'react-pose';
-import Box from '../components/Box';
-
-const BoxGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 300px);
-  justify-items: center;
-  justify-content: center;
-  margin-top: 5rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  row-gap: 1rem;
-`;
-
-const BoxContainer = posed.div({
-  hoverable: true,
-  pressable: true,
-  init: {
-    scale: 1,
-  },
-  hover: {
-    scale: 1.05,
-  },
-  press: {
-    scale: 1,
-  },
-});
 
 const About = () => (
   <div>

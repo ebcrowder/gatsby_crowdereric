@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
-import posed from 'react-pose';
 
 import logo from '../img/logo.png';
 
@@ -30,26 +29,10 @@ const Logo = styled.img`
   align-self: auto;
 `;
 
-const LogoContainer = posed.div({
-  hover: {
-    scale: 1.2,
-  },
-  hoverable: true,
-  init: {
-    scale: 1,
-  },
-  press: {
-    scale: 1.1,
-  },
-  pressable: true,
-});
-
 const Header = () => (
   <HeaderWrapper role="navigation" aria-label="navigation">
     <Link to="/" partiallyActive={true} activeStyle={styles.active}>
-      <LogoContainer>
-        <Logo src={logo} alt="logo" aria-label="logo" />
-      </LogoContainer>
+      <Logo src={logo} alt="logo" aria-label="logo" />
     </Link>
     <ListItem className="nav-item">
       <Link to="/blog" partiallyActive={true} activeStyle={styles.active}>
