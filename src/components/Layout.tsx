@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
 body, html {
   background-color: #ffffff;
   color: #000000;
-  font-family: Menlo, Monaco, Courier New, monospace, serif; 
+  font-family: Fira Code, Menlo, monospace; 
   text-align: left;
   font-size: 18px;
   height: 100%;
@@ -16,6 +16,49 @@ body, html {
 
   @media (max-width: 900px) {
     font-size: 16px;
+  }
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: #616161;
+}
+
+p > a {
+  text-decoration-line: underline;
+  text-decoration-color: #FF0266;
+  text-decoration-style: solid;
+  font-weight: bold;
+}
+
+p {
+  padding-top: 0;
+  @media (max-width: 900px) {
+    padding: 0;
+  }
+}
+
+ol > li {
+  margin: 20px;
+}
+
+// dark mode preference detection - overrides light styles above 
+@media (prefers-color-scheme: dark) {
+  body, html {
+      background-color: #212121;
+      color: #FFFFFF;
+  }
+
+  a {
+    color: #FFFFFF;
+  }
+  
+  a:hover, a:focus {
+    color: #BDBDBD;
   }
 }
 
@@ -36,32 +79,6 @@ body, html {
   }
 }
 
-a {
-  color: #000000;
-  text-decoration: none;
-}
-
-a:hover {
-  font-weight: bold;
-}
-
-p > a {
-  text-decoration-line: underline;
-  text-decoration-color: #FF0266;
-  text-decoration-style: solid;
-  font-weight: bold;
-}
-
-p {
-  padding-top: 0;
-  @media (max-width: 900px) {
-    padding: 0;
-  }
-}
-
-ol > li {
-  margin: 20px;
-}
 
 // code blocks 
 pre[class*='language-'] {

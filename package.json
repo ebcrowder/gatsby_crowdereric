@@ -5,7 +5,6 @@
   "author": "Eric Crowder <ebcrowder@gmail.com>",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.6",
-    "dotenv": "^8.1.0",
     "gatsby": "^2.15.14",
     "gatsby-plugin-manifest": "^2.2.16",
     "gatsby-plugin-preact": "^3.1.20",

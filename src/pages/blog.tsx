@@ -12,6 +12,7 @@ interface BlogProps {
           node: {
             id: string;
             excerpt: string;
+            timeToRead: number;
             frontmatter: {
               date: string;
               path: string;
@@ -55,6 +56,7 @@ export const pageQuery = graphql`
         node {
           id
           excerpt(pruneLength: 250)
+          timeToRead
           frontmatter {
             date(formatString: "MM.DD.YYYY")
             path
